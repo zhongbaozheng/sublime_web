@@ -1,0 +1,21 @@
+/*位置信息*/
+#location {
+	background-color: white;
+	width: 40%;
+	padding: 0.5rem 1.5rem;
+	height: 4.0rem;
+	border-radius: 4.0rem;
+	margin: 1.0rem 4.0rem;
+	font-size: 2.0em;
+}
+
+#location img {
+	margin-right: 1.0rem;
+}
+
+#location span {
+	position: relative;
+	bottom: 0.75rem;
+}
+
+/*位置信息*/

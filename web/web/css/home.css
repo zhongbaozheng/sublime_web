@@ -1,0 +1,83 @@
+/*首页主体内容样式*/
+.menu {
+	flow: left;
+	padding-left: 3%;
+	padding-top: 2%;
+}
+
+.menu img {
+	width: 48%;
+	height: 48%;
+}
+
+.content {
+	display:inline-block;
+	text-align: center;
+	margin: 0 auto;
+	padding-bottom:5.0rem;
+	width: 48%;
+	height: 48%;
+	margin-bottom: 0.5rem;
+	
+}
+
+.right-top {
+	border-top-right-radius: 1.8rem;
+	border-bottom-left-radius: 1.8rem;
+	border-bottom-right-radius: 1.8rem;
+	background-color: #9290D9;
+}
+
+.left-top {
+	border-top-left-radius: 1.8rem;
+	border-bottom-left-radius: 1.8rem;
+	border-bottom-right-radius: 1.8rem;	
+	background-color: #8FC8E4;
+}
+
+.right-bottom {
+	border-top-right-radius: 1.8rem;
+	border-top-left-radius: 1.8rem;
+	border-bottom-right-radius: 1.8rem;
+	background-color: #F9B548;
+}
+
+.left-bottom {
+	border-top-right-radius: 1.8rem;
+	border-top-left-radius: 1.8rem;
+	border-bottom-left-radius: 1.8rem;
+	background-color: #2AEC1F;
+}
+
+.content img {
+	margin-top: 0.8rem;
+}
+
+.content p {
+	margin: 1.0rem 0;
+}
+
+.title {
+	color: white;
+	font-size: 2.5em;
+}
+
+.detail {
+	color: white;
+	font-size: 1.5em;
+}
+/*首页主体内容样式*/
+
+/*轮播图*/
+.focus{ width:100%; height:30.0rem;  margin:0 auto; position:relative; overflow:hidden;   }
+.focus .hd{ width:100%; height:11px;  position:absolute; z-index:1; bottom:5px; text-align:center;  }
+.focus .hd ul{ display:inline-block; height:5px; padding:3px 5px; background-color:rgba(255,255,255,0.7); 
+		-webkit-border-radius:5px; -moz-border-radius:5px; border-radius:5px; font-size:0; vertical-align:top;
+}
+.focus .hd ul li{ display:inline-block; width:5px; height:5px; -webkit-border-radius:5px; -moz-border-radius:5px; border-radius:5px; background:#8C8C8C; margin:0 5px;  vertical-align:top; overflow:hidden;   }
+.focus .hd ul .on{ background:#FE6C9C;  }
+
+.focus .bd{ position:relative; z-index:0; }
+.focus .bd li img{ width:100%;  height:30.0rem; background:url(images/loading.gif) center center no-repeat;  }
+.focus .bd li a{ -webkit-tap-highlight-color:rgba(0, 0, 0, 0); /* 取消链接高亮 */  }
+/*轮播图*/

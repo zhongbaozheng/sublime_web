@@ -1,0 +1,81 @@
+/*大图*/
+.position_img {
+	position: relative;
+	height: 40%;
+	margin-bottom: 1.5rem;
+}
+
+.position_img img {
+	display: block;
+	width: 100%;
+	height: 100%;
+}
+
+.position_img p {
+	border-radius: 0.1rem;
+	margin: 0;
+	font-size: 2.0em;
+	color: white;
+	position: absolute;
+	bottom: 0;
+	left: 1.0rem;
+	background: rgba(1,1,1,0.6);
+	padding: 0.2rem;
+}
+/*大图*/
+
+/*站点信息*/
+.station_details {
+	position: relative;
+	background-color: white;
+	padding: 1.0rem 3.0rem 3.0rem 3.0rem;
+	border-top: 2px solid #DFE0E3;
+	border-bottom: 2px solid #DFE0E3;
+}
+
+
+.station_details img {
+	position: absolute;
+	width: 120px;
+	height: 120px;
+	bottom: 3.0rem;
+	right: 3.0rem;
+}
+
+.station_details span img {
+	width: 23px;
+	height: 36px;
+	bottom: 3.0rem;
+	left: 3.0rem;
+}
+
+#manager_type,#address_detail {
+	margin: 1.0rem 0;
+	font-size: 1.7em;
+	color: #B9B9B9;
+}
+
+#manager_name {
+	color: #3EB7EC;
+	font-size: 2.5em;
+	margin-right: 0.5rem;
+}
+
+#address {
+	font-size: 2.5em;
+	margin-top: 1.0rem;
+	margin-bottom: 0;
+	color:black;
+}
+
+#mobile {
+	font-size: 1.7em;
+	margin-right: 0.5rem;
+	padding-left: 2.0rem;
+}
+
+#tel {
+	font-size: 1.7em;
+	margin-right: 0.5rem;	
+}
+/*站点信息*/

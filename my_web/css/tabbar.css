@@ -1,0 +1,52 @@
+.tabbar{
+	width: 100%;
+	border-top: 0.3px solid #444444;
+	height: 8.0rem;
+	position: fixed;
+	bottom: 0;
+	z-index: 999;
+	background: white;
+}
+
+.tabbar ul{
+	padding: 0;
+	margin: 0;
+}
+
+.tabbar li{
+	width: 33%;
+	height: 8.0rem;
+	font-size: 2.0em;
+	line-height: 12.0rem;   /*行高*/
+	text-align: center;
+	display: inline-block;  /*包裹加行宽*/
+}
+
+
+.home{
+	background: url(../images/home@2x.png) center 1.0rem no-repeat;
+}
+
+.home_selected{	
+	background: url(../images/home_selected@2x.png) center 1.0rem no-repeat;
+}
+
+.order{
+	background: url(../images/order@2x.png) center 1.0rem no-repeat;
+}
+
+.order_selected{
+	background: url(../images/order_selected@2x.png) center 1.0rem no-repeat;
+}
+
+.mine{
+	background: url(../images/mine@2x.png) center 1.0rem no-repeat;
+}
+
+.mine_selected{
+	background: url(../images/mine_selected@2x.png) center 1.0rem no-repeat;
+}
+
+
+
+

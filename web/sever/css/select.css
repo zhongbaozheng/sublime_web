@@ -1,0 +1,23 @@
+/*地址选择列表*/
+.address {
+	height: 8.0rem;
+	line-height: 8.0rem;
+	text-align: center;
+}
+
+.address span {
+	color: #55ABF5;
+	font-size: 2.5em;
+}
+
+.address select {
+	font-size: 2.5em;
+	padding-left: 0.8rem;
+	margin: 0 1.3rem;
+	border-radius: 0.3rem;
+	width: 22%;
+	height: 4.5rem;
+}
+
+/*地址选择列表*/
+

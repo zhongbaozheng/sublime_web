@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>我的钱包</title>
+	<meta name="viewport" content="user-scalable=0" />
+	<link rel="stylesheet" type="text/css" href="../css/main.css" />
+	<link rel="stylesheet" type="text/css" href="../css/recharge.css" />
+	<link rel="stylesheet" type="text/css" href="../css/button.css" />
+	<link rel="stylesheet" type="text/css" href="../css/alert.css" />
+
+	<style type="text/css">
+		body {
+			padding-bottom: 20.0rem;
+		}
+	</style>
+</head>
+<body>
+	
+	<!-- 顶部标题栏 -->
+	<header>
+		<div class="header">
+			<a class="left_ico" href="purse.html"><img src="../images/back.png" /></a>
+			<p>我的钱包</p>
+		</div>
+	</header>
+
+	<!-- 充值 -->
+	<div class="rechargeBg">
+		<p>提现<span class="recharge_type">微信零钱</span></p>
+		<div class="divider" style="margin-left: 0;width: 92%;"></div>
+		<p>金额<span class="symbol">¥</span><input placeholder="请输入提现金额" /></p>
+	</div>
+	<!-- 充值 -->
+	
+	<button class="confirm" onclick="show_alert('#pay_success')">确认提现</button>
+
+	<!-- 充值成功弹窗 -->
+	<div id="pay_success" class="alert_bg">
+		<div class="alert_content">
+			<img class="alert_content_img" src="../images/tick1@2x.png" />
+			<p style="height: 40%;line-height: 6.5rem">提现成功</p>
+			<button class="alert_btn" onclick="hide_alert('#pay_success')">确认</button>
+		</div>
+	</div>
+	<!-- 充值成功弹窗 -->
+
+	<script type="text/javascript" src="../js/jquery-1.4.4.min.js"></script>
+	<script type="text/javascript" src="../js/alert.js"></script>
+
+</body>
+</html>

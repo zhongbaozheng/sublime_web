@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>寄件地址</title>
+	<meta name="viewport" content="user-scalable=0" />
+	<meta name = "format-detection" content="telephone=no">
+	<link rel="stylesheet" type="text/css" href="../css/main.css" />
+	<link rel="stylesheet" type="text/css" href="../css/input.css" />
+	<link rel="stylesheet" type="text/css" href="../css/alert.css" />
+	<link rel="stylesheet" type="text/css" href="../css/option.css" />
+</head>
+<body>
+	<!-- 顶部标题栏 -->
+	<header>
+		<div class="header">
+			<a class="left_ico" onclick="history.back();"><img src="../images/back.png" /></a>
+			<p>寄件地址</p>
+			<a class="right_ico2" href="add_express_address.html"><img src="../images/add@2x.png" /></a>
+		</div>
+	</header>
+	<!-- 顶部标题栏 -->
+
+	<!-- 寄件地址 -->
+	<div class="express_address">
+		<ul>
+			<li>
+				<label>
+					<input type="radio" name="express_address" />
+					<div class="label_content">
+						<p class="label_name">叶乐华<span class="label_tel">13226899999</span></p>
+						<p class="label_address">广东河源市源城区 源西街道 石坪路8号</p>
+							
+					</div>
+					<div class="option_right_ico3">
+						<a href="edit_express_address.html"><img class="option_right_ico3_edit" src="../images/edit@2x.png" /></a>
+						<img onclick="show_alert('.alert_bg');" src="../images/delete1@2x.png" />
+					</div>
+				</label>
+				<div class="stripe_border" style="margin-top: -2.0rem;"><img src="../images/stripe_orange.png" /></div>
+			</li>
+			<li>
+				<label>
+					<input type="radio" name="express_address" />
+					<div class="label_content">
+						<p class="label_name">叶乐华<span class="label_tel">13226899999</span></p>
+						<p class="label_address">广东河源市源城区 源西街道 石坪路8号</p>
+							
+					</div>
+					<div class="option_right_ico3">
+						<a href="edit_express_address.html"><img class="option_right_ico3_edit" src="../images/edit@2x.png" /></a>
+						<img onclick="show_alert('.alert_bg');" src="../images/delete1@2x.png" />
+					</div>
+				</label>
+				<div class="stripe_border" style="margin-top: -2.0rem;"><img src="../images/stripe_orange.png" /></div>
+			</li>
+		</ul>
+	</div>
+	<!-- 寄件地址 -->
+	
+	<!-- 删除弹窗 -->
+	<div class="alert_bg">
+		<div class="alert_content1">
+			<p>是否删除?</p>
+			<div class="alert_btn_content">
+				<button class="alert_btn1" style="height: 36%;" onclick="hide_alert('.alert_bg');">删除</button>
+				<button class="alert_btn1" style="height: 36%;" onclick="hide_alert('.alert_bg');">取消</button>
+			</div>
+		</div>
+	</div>
+	<!-- 删除弹窗 -->
+	<script type="text/javascript" src="../js/jquery-1.4.4.min.js"></script>
+	<script type="text/javascript" src="../js/alert.js"></script>
+</body>
+</html>

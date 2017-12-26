@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>首页</title>
+	<meta name="viewport" content="user-scalable=0" />
+	<link rel="stylesheet" type="text/css" href="../css/main.css" />
+	<link rel="stylesheet" type="text/css" href="../css/tabbar.css" />
+	<link rel="stylesheet" type="text/css" href="../css/home.css" />
+	<link rel="stylesheet" type="text/css" href="../css/alert.css" />
+	<script type="text/javascript" src="../js/TouchSlide.1.1.js"></script>
+	<style type="text/css">
+		body {
+			padding-bottom: 32%;
+		}
+	</style>
+</head>
+<body>
+	<!-- 顶部标题栏 -->
+	<header>
+		<div class="header">
+			<a class="left_ico1" href="site_application.html"><img src="../images/add_friend@2x.png" /></a>	
+			<p><a style="font-size: 1.0em;right: 45%;" href="choose_station.html">首页</a></p>
+			<a style="right: 2.0rem;" class="right_ico1" href="search_express.html"><img src="../images/qrcode@2x.png" /></a>
+		</div>
+	</header>
+	<!-- 顶部标题栏 -->
+
+	<!-- 轮播图 -->
+	<div id="focus" class="focus">
+		<div class="hd">
+			<ul></ul>
+		</div>
+		<div class="bd">
+			<ul>
+				<li><a href="#"><img _src="../images/lunbo@2x.png" /></a></li>
+				<li><a href="#"><img _src="../images/m2.jpg" /></a></li>
+				<li><a href="#"><img _src="../images/m3.jpg" /></a></li>
+			</ul>
+		</div>
+	</div>
+	<!-- 轮播图 -->
+
+	<!-- 调用TouchSlide轮播图js插件,详情请看TouchSlide官网Demo -->
+	<script type="text/javascript">
+		TouchSlide({ 
+			slideCell:"#focus",
+			titCell:".hd ul", //开启自动分页 autoPage:true ，此时设置 titCell 为导航元素包裹层
+			mainCell:".bd ul", 
+			effect:"left", 
+			autoPlay:true,//自动播放
+			autoPage:true, //自动分页
+			switchLoad:"_src" //切换加载，真实图片路径为"_src" 
+		});
+	</script>
+	<!-- 调用TouchSlide轮播图js插件,详情请看TouchSlide官网Demo -->
+
+	<!-- 内容模块 -->
+	<div class="menu">
+		<a href="express.html">
+			<div class="content left-top">
+				<img src="../images/express@2x.png" />
+				<p class="title">我要寄件</p>
+				<p class="detail detail-left-top">为您匹配附近服务站，提供即时上门收件服务</p>
+			</div>
+		</a>
+		<a href="express_order.html">
+			<div class="content right-top">
+				<img src="../images/search@2x.png" />
+				<p class="title">查询订单</p>
+				<p class="detail detail-right-top">输入订单号查询状态<br /><br /></p>
+			</div>
+		</a>
+		<div class="content left-bottom" onclick="show_alert('#call');">
+			<img src="../images/clear@2x.png" />
+			<p class="title">一键厨余</p>
+			<p class="detail detail-left-bottom">站点人员 上门服务 分类回收 美化家园</p>
+		</div>
+		<div class="content right-bottom" onclick="show_alert('#call');"><img src="../images/phone@2x.png" /><p class="title">我要服务</p><p class="detail detail-right-bottom">专业人员 上门服务 安装维修 家政服务</p></div>
+	</div>
+	<!-- 内容模块 -->
+
+	<!-- 底部tabbar -->
+	<div class="tabbar">
+		<ul>
+			<li class="home_selected">首页</li>
+			<li class="order"><a href="express_order.html">订单</a></li>
+			<li class="mine"><a href="mine.html">我的</a></li>
+		</ul>
+	</div>
+	<!-- 底部tabbar -->
+
+	<!-- 一键呼叫弹窗 -->
+	<div id="call" class="alert_bg">
+		<div class="alert_content1">
+			<p>需扣费0.5元</p>
+			<div class="alert_btn_content">
+				<button class="alert_btn1" style="height: 36%;" onclick="hide_alert('#call');">取消</button>
+				<button class="alert_btn1" style="height: 36%;" onclick="hide_alert('#call');">呼叫</button>
+			</div>
+		</div>
+	</div>
+	<!-- 删除弹窗 -->
+
+	<!-- 一键厨余弹窗 -->
+	<div id="chuyu" class="alert_bg">
+		<div class="alert_content2">
+			<p style="line-height: 5.0rem;padding: 2.0rem 3.0rem 0 3.0rem;">服务人员收到信息会尽快上门，请稍等。</p>
+			<button class="alert_btn" onclick="hide_alert('#chuyu')">确认</button>
+		</div>
+	</div>
+	<!-- 一键厨余弹窗 -->
+
+	<script type="text/javascript" src="../js/jquery-1.4.4.min.js"></script>
+	<script type="text/javascript" src="../js/alert.js"></script>
+
+</body>
+</html>

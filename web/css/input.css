@@ -1,0 +1,407 @@
+.inputBg {
+	text-align: center;
+}
+
+.inputBase {
+	font-size: 2.5em;
+	padding-left: 12%;
+	border-radius: 0.8rem;
+	border: 2px solid #DFE0E3;
+	width: 78%;
+	margin-top:2.0rem; 
+}
+
+.inputA {
+	height: 7.5rem;
+}
+
+.inputB {
+	font-size: 3.0em;
+	padding: 2% 4%;
+	width: 80%;
+	text-align: top;
+	height: 18.0rem;
+}
+
+/*输入框样式C*/
+.inputC {
+	background: white;
+}
+
+.inputC p {
+	font-size: 2.0em;
+	margin: 0;
+	border-top: 2px solid #DFE0E3;
+	padding: 0 2.0rem;
+	height: 8.0rem;
+}
+
+.inputC input {
+	font-size: 0.9em;
+	border: 0;
+	width: 82%;
+	height: 98%;
+}
+/*带图标的input*/
+.input_item {
+	position: relative;
+	height: 8.0rem;
+	line-height: 8.0rem;
+	border-top: 2px solid #DFE0E3;
+	font-size:2.5em;
+	padding: 0 2.0rem 0 8.0rem;
+}
+
+.input_item input {
+	width: 100%;
+	height: 80%;
+}
+/*带图标的Input*/
+/*输入框样式C*/
+
+/*搜索框样式*/
+.searchBg {
+	position: relative;
+	background: white;
+	text-align: center;
+	height: 6.0rem;
+	line-height: 6.5rem;
+	padding: 0.5rem 0;
+}
+.search {
+	color: #55ABF5;
+	padding-left: 2.0rem;
+	font-size: 1.8em;
+	border-radius: 4.0rem;
+	border: 2px solid #55ABF5;
+	width: 85%;
+	height: 75%;
+}
+
+.searchBtn {
+	position: absolute;
+	top:2.0rem;
+	right: 5.0rem;
+}
+
+.search::-webkit-input-placeholder { /* WebKit browsers */  
+  color: #55ABF5;  
+}  
+.search::-moz-placeholder { /* Mozilla Firefox 4 to 18 */  
+  color: #55ABF5;  
+}  
+.search:-moz-placeholder { /* Mozilla Firefox 19+ */  
+  color: #55ABF5;  
+}  
+.search:-ms-input-placeholder { /* Internet Explorer 10+ */  
+  color: #55ABF5;  
+}  
+/*搜索框样式*/
+
+/*详细地址样式*/
+.address_detail {
+	height: 8.0rem;
+	border-top: 3px solid #DFE0E3;
+	border-bottom: 3px solid #DFE0E3;
+	background-color: white;
+	font-size: 2.5em;
+	color: #55ABF5;
+	line-height: 8.0rem;
+	padding-left: 2.0rem;
+}
+
+.address_detail input {
+	font-size: 0.85em;
+	width: 75%;
+	height: 74%;
+	border: 0;
+	margin-top: 1.0rem;
+}
+
+.address_detail span{
+	position: relative;
+	top:0.2rem;
+}
+/*详细地址样式*/
+
+/*实名认证,营业执照*/
+.certification {
+	font-size: 2.0em;
+	margin-top: 2.0rem;
+	margin-bottom: 8.0rem;
+	padding-left: 2.0rem;
+}
+
+.certification a {
+	color: #55ABF5;
+}
+
+.certification input[type='checkbox'] {
+	width: 20px;
+}
+
+.user_certification_image {
+	background-color: white;
+	margin: 0 2.0rem;
+	padding: 1.0rem;
+	font-size: 2.5em;
+	color: #3EB7EC;
+	border-bottom: 3px dashed #999999;
+	padding-bottom: 3.0rem;
+
+}
+
+.no_border {
+	border: 0;
+	margin-bottom: 7.0rem;
+}
+
+.user_certification_image p {
+	margin-bottom: 0;
+	margin-top: 1.0rem;
+	padding-left: 3.5rem;
+	background: url(../images/pic@2x.png) 0.5rem center no-repeat;
+}
+
+.user_certification_image span {
+	display: block;
+	text-align: center;
+}
+
+.user_certification_image_container {
+	position: relative;
+	text-align: center;
+	padding-top: 2.0rem;
+	width: 220px;
+	height: 220px;
+	display: inline-block;
+	
+}
+
+.user_certification_image_frame {
+	display: inline-block;
+	color: black;
+	margin-right: 0.5rem;
+}
+
+.user_certification_image_frame p {
+	margin-top: 0;
+	text-align: center;
+	padding: 0;
+	background: white;
+}
+
+.user_certification_delete {
+	/*display: none;*/
+	position: absolute;
+	padding: 5px;
+	width: 50px;
+	height: 50px;
+	top: 5px;
+    right: 0px;
+    z-index: 3;
+    background-color: rgba(1,1,1,0.6);
+}
+
+.user_certification_image_container input {
+	/*display: none;*/
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	top: 0;
+	right: 0;
+	z-index: 2;
+	opacity: 0;
+}
+
+.user_certification_image_content {
+	width: 200px;
+	
+}
+
+.hide {
+	display: none;
+}
+
+/* 实名认证,营业执照 */
+
+/*寄件地址样式*/
+.express_address input {
+	width: 30px;
+	height: 15.0rem;
+	margin-right: 2.5em;
+}
+
+.express_address li {
+	position: relative;
+	height: 15.0rem;
+	padding: 1.0rem 0 2.0rem 0;
+	margin-bottom: 3.0rem;
+	background-color: white;
+	list-style-type: none;
+}
+
+.express_address ul {
+	padding: 0;
+	margin: 0;
+	height: 100%;
+}
+
+.express_address label {
+	margin: 0 3.5rem;
+}
+
+.label_content {
+	display: inline-block;
+	position: relative;
+	bottom: 5.0rem;
+}
+.label_name {
+	font-size: 3.0em; 
+	margin-bottom: 1.5rem;
+}
+
+.label_tel {
+	font-weight: normal;
+	margin-left: 4.0rem;
+	font-size: 0.9em;
+}
+
+.label_address {
+	font-size: 2.0rem;
+	margin-top: 1.0rem;
+}
+
+/*寄件地址样式*/
+
+/*意见反馈*/
+
+.responseBg {
+	text-align: center;
+	height: 30%;
+}
+
+.response {
+	font-size: 2.5em;
+	width: 85%;
+	height: 100%;
+	padding: 2.0rem;
+	margin-top: 2.0rem;
+	border-radius: 1.5rem;
+}
+/*意见反馈*/
+
+/*快递查询*/
+.search_express_background {
+	background: white;
+	height: 36%;
+	padding-top: 6.0rem;
+
+}
+
+.search_express_item {
+	height: 8.0rem;
+	padding-left: 3.0rem; 
+}
+
+.search_express_item_input {
+	width: 78%;
+	height: 90%;
+	border: 0;
+	font-size: 2.0em;
+	padding-right: 4.0rem;
+	padding-left: 1.0rem;
+	border-bottom: 2px solid #DFE0E3;
+	background: url(../images/scan@2x.png) no-repeat right center;
+}
+
+.search_express_item_option {
+	color: #999999;
+	font-size: 2.0em;
+	padding-left: 1.0rem;
+	border-bottom: 2px solid #DFE0E3;
+	display: inline-block;
+	width: 85%;
+	height: 100%;
+	line-height: 8.0rem;
+	background: url(../images/right_arrow_very_large@2x.png) no-repeat right center;
+}
+
+.search_express_item_left_ico {
+	width: 50px;
+	height: 35px;
+	margin-right: 1.0rem;
+	vertical-align: middle;
+}
+/*快递查询*/
+
+/*申请协议*/
+.label_certification {
+	padding-left: 2.5rem;
+	background: url(../images/radio_unchecked@2x.png) no-repeat 1.0rem center;
+}
+
+.certification_checked {
+	background: url(../images/radio_checked@2x.png) no-repeat 1.0rem center;
+}
+
+.input_certification {
+	opacity: 0;
+}
+/*申请协议*/
+
+.icon_avatar {
+	background: url(../images/user1@2x.png) 3.0rem center no-repeat;
+	background-color: white;
+}
+
+.icon_user {
+	background: url(../images/user@2x.png) 2.0rem center no-repeat;
+	background-color: white;
+}
+
+.icon_user1 {
+	background: url(../images/user@2x.png) 3.0rem center no-repeat;
+	background-color: white;
+}
+
+.icon_sex {
+	background: url(../images/sex@2x.png) 3.0rem center no-repeat;
+	background-color: white;
+}
+
+.icon_tel {
+	background: url(../images/tel@2x.png) 2.0rem center no-repeat;
+	background-color: white;
+}
+
+.icon_mobile1 {
+	background: url(../images/mobile_middle@2x.png) 3.5rem center no-repeat;
+	background-color: white;
+}
+
+.icon_mobile {
+	background: url(../images/mobile@2x.png) 2.0rem center no-repeat;
+	background-color: white;
+}
+
+.icon_email {
+	background: url(../images/email@2x.png) 2.0rem center no-repeat;
+	background-color: white;
+}
+
+.icon_address {
+	background: url(../images/address@2x.png) 2.0rem center no-repeat;
+	background-color: white;
+}
+
+.icon_password {
+	background: url(../images/password@2x.png) 3.0rem center no-repeat;
+	background-color: white;
+}
+
+.icon_address1 {
+	background: url(../images/address@2x.png) 3.0rem center no-repeat;
+	background-color: white;	
+}
+

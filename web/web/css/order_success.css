@@ -1,0 +1,49 @@
+.order_success_pic {
+	margin: 6.0rem 3.0rem 2.0rem 3.0rem;
+	font-size: 2.4em;
+	color: #52A800;
+}
+
+
+.order_success_pic img {
+	vertical-align: middle;
+
+}
+
+.order_success_title {
+	margin-right: 43%;
+	margin-left: 1.0rem;
+
+}
+
+.order_success_pic_left {
+	width: 9%;
+	height: 9%;
+}
+
+.order_success_pic_right {
+	width: 28%;
+	height: 28%;
+}
+
+.order_success_info {
+	margin: 0 3.0rem;
+}
+
+.order_success_description {
+	font-size: 2.0em;
+	margin-bottom: 0;
+	margin-top: 1.0rem;
+}
+
+.order_success_date {
+	color: #999999;
+	font-size: 1.8em;
+	margin-bottom:1.0rem;
+}
+
+.order_success_address {
+	font-size: 1.8em;
+	color: #F19149;
+}
+

@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>我要寄件</title>
+	<meta name="viewport" content="user-scalable=0" />
+	<link rel="stylesheet" type="text/css" href="../css/main.css" />
+	<link rel="stylesheet" type="text/css" href="../css/position.css" />
+	<link rel="stylesheet" type="text/css" href="../css/option.css" />
+	<link rel="stylesheet" type="text/css" href="../css/express.css" />
+	<link rel="stylesheet" type="text/css" href="../css/button.css" />
+	<link rel="stylesheet" type="text/css" href="../css/alert.css" />
+	<style type="text/css">
+		body {
+			padding-bottom: 8.0rem;
+		}
+	</style>
+</head>
+<body>
+	
+	<!-- 顶部标题栏 -->
+	<header>
+		<div class="header">
+			<a class="left_ico" href="home.html"><img src="../images/back.png" /></a>
+			<p>我要寄件</p>
+		</div>
+	</header>
+	<!-- 顶部标题栏 -->
+
+	<!-- 位置信息 -->
+	<div id="location"><img src="../images/address@2x.png" /><span>天河区科韵路服务站点</span></div>	
+	<!-- 位置信息 -->
+
+	<!-- 寄件人信息 -->
+	<div style="background-color: white;margin-bottom: 2.0rem;">
+		<div class="option_large ico_send"><a style="line-height: 16.0rem;"href="express_address.html">请填写寄件人信息<img class="option_right_ico1" src="../images/right_arrow_large@2x.png"></a></div>
+		<div class="option_large">
+			<a style="padding-left: 5%;" href="express_address.html">
+				<div class="option_content" style="margin-top: 3.0rem;">
+					<p class="option_name">叶乐华<span class="option_tel">13226899999</span></p>
+					<p class="option_address">广东河源市源城区 源西街道 石坪路8号</p>
+				</div>
+			</a>
+		</div>
+	</div>
+	<!-- 寄件人信息 -->
+
+	<!-- 重量及物品类别 -->
+	<div style="margin-bottom: 2.0rem;">
+		<div class="goods_info" onclick="show_alert('#weight');">
+			<p class="goods_property margin_right">重量</p>
+			<p class="goods_value">2kg</p>
+		</div>
+		<div class="goods_info align_right" onclick="show_alert('#goods_type');">
+			<p class="goods_property">物品</p>
+			<p class="goods_value">数码产品</p>
+		</div>
+	</div>
+	<!-- 重量及物品类别 -->
+	
+	<!-- 快递信息选择 -->
+	<div style="background-color: white;margin-bottom: 2.0rem;">
+		<div class="option no-border" onclick="show_alert('#express_company');"><a style="padding-left: 5%">快递公司<img src="../images/right_arrow@2x.png"><span class="goods_value">顺丰速运</span></a></div>
+		<div class="option no-border" onclick="show_alert('#express_type');"><a style="padding-left: 5%">寄件方式<img src="../images/right_arrow@2x.png"><span class="goods_value">站点自寄</span></a></div>
+		<div class="option no-border" onclick="show_alert('#pay_type');"><a style="padding-left: 5%">支付方式<img src="../images/right_arrow@2x.png"><span class="goods_value">现金支付</span></a></div>
+	</div>
+	<!-- 快递信息选择 -->
+
+	<!-- 支付信息 -->
+	<div class="pay">
+		<span>¥20</span>
+		<a onclick="show_alert('#pay_success');">立即提交</a>
+	</div>
+	<!-- 支付信息 -->
+
+	<!-- 寄件方式选择弹窗 -->
+	<div id="express_type" class="action_sheet_bg" onclick="hide_alert('#express_type')">
+		<dl class="action_sheet_content">
+			<dt>寄件方式</dt>
+			<div class="stripe_border"><img src="../images/stripe_orange.png" /></div>
+			<dd class="action_sheet_selected2" onclick="selectShipping(event);">快递员上门收件</dd>
+			<dd onclick="selectShipping(event);">站点自寄</dd>
+		</dl>
+	</div>
+	<!-- 寄件方式选择弹窗 -->
+
+	<!-- 支付方式选择弹窗 -->
+	<div id="pay_type" class="action_sheet_bg" onclick="hide_alert('#pay_type')">
+		<dl class="action_sheet_content1">
+			<dt>支付方式</dt>
+			<div class="stripe_border"><img src="../images/stripe_orange.png" /></div>
+			<dd class="action_sheet_selected1" onclick="selectPayment(event);">微信支付</dd>
+			<dd onclick="selectPayment(event);">现金支付</dd>
+			<dd onclick="selectPayment(event);">对方付费</dd>
+		</dl>
+	</div>
+	<!-- 支付方式选择弹窗 -->
+
+	<!-- 物品种类选择弹窗 -->
+	<div id="goods_type" class="action_sheet_bg">
+		<dl class="action_sheet_goods_type_content">
+			<dt>物品种类</dt>
+			<div class="stripe_border" style="margin-bottom: 2.5rem;"><img src="../images/stripe_orange.png" /></div>
+			<dd class="action_sheet_goods_type_item">
+				<button class="action_sheet_goods_type_button" onclick="selectGoodsType(event);">文件</button>
+				<button class="action_sheet_goods_type_button" onclick="selectGoodsType(event);">数码产品</button>
+				<button class="action_sheet_goods_type_button" onclick="selectGoodsType(event);">日用品</button>
+				<button class="action_sheet_goods_type_button" onclick="selectGoodsType(event);">装饰</button>
+				<button class="action_sheet_goods_type_button chose" onclick="selectGoodsType(event);">食品</button>
+				<button class="action_sheet_goods_type_button" onclick="selectGoodsType(event);">其他</button>
+			</dd>
+			<!-- <dd class="action_sheet_goods_type_item">
+				
+			</dd> -->
+			<button class="confirm" style="margin-top: 12.0rem;height: 7.0rem;" onclick="hide_alert('#goods_type');">确定</button>
+		</dl>
+	</div>
+	<!-- 物品种类选择弹窗 -->
+
+	<!-- 重量选择弹窗 -->
+	<div id="weight" class="action_sheet_bg">
+		<dl class="action_sheet_weight_content">
+			<dt>重量</dt>
+			<div class="stripe_border"><img src="../images/stripe_orange.png" /></div>
+			<div class="action_sheet_weight">
+				<img class="action_sheet_minus" onclick="minusWeight();" src="../images/minus@2x.png" />
+				<span class="action_sheet_kilo">1</span>
+				<span class="action_sheet_unit">kg</span>
+				<img class="action_sheet_add" onclick="addWeight();" src="../images/add1@2x.png" />
+			</div>
+			<button class="confirm" style="margin-top: 0;" onclick="hide_alert('#weight');">确定</button>
+		</dl>
+	</div>
+	<!-- 重量选择弹窗 -->
+	
+	<!-- 支付成功弹窗 -->
+	<div id="pay_success" class="alert_bg">
+		<div class="alert_content">
+			<img class="alert_content_img" src="../images/tick1@2x.png" />
+			<p style="height: 40%;line-height: 6.5rem">支付成功</p>
+			<button class="alert_btn" onclick="hide_alert('#pay_success');window.location.href='order_success.html';">确定</button>
+		</div>
+	</div>
+	<!-- 支付成功弹窗 -->
+
+	<!-- 快递公司选择弹窗 -->
+	<div id="express_company" class="alert_bg">
+		<div class="action_sheet_express_content">
+			<label class="action_sheet_express_label exress_label_checked" onclick="selectExpress(event);">
+				<input class="action_sheet_express_radio" type="radio" name="express_company" />
+				西邮
+			</label>
+			<label class="action_sheet_express_label" onclick="selectExpress(event);">
+				<input class="action_sheet_express_radio" type="radio" name="express_company" />
+				顺丰
+			</label>
+			<label class="action_sheet_express_label" onclick="selectExpress(event);">
+				<input class="action_sheet_express_radio" type="radio" name="express_company" />
+				EMS
+			</label>
+			<label class="action_sheet_express_label" onclick="selectExpress(event);">
+				<input class="action_sheet_express_radio" type="radio" name="express_company" />
+				宅急送
+			</label>
+			<label class="action_sheet_express_label" onclick="selectExpress(event);">
+				<input class="action_sheet_express_radio" type="radio" name="express_company" />
+				百世快递
+			</label>
+			<label class="action_sheet_express_label" onclick="selectExpress(event);">
+				<input class="action_sheet_express_radio" type="radio" name="express_company" />
+				中通
+			</label>
+			<label class="action_sheet_express_label" onclick="selectExpress(event);">
+				<input class="action_sheet_express_radio" type="radio" name="express_company" />
+				韵达
+			</label>
+			<label class="action_sheet_express_label" onclick="selectExpress(event);">
+				<input class="action_sheet_express_radio" type="radio" name="express_company" />
+				申通
+			</label>
+			<label class="action_sheet_express_label" onclick="selectExpress(event);">
+				<input class="action_sheet_express_radio" type="radio" name="express_company" />
+				邦德
+			</label>
+		</div>
+	</div>
+	<!-- 快递公司选择弹窗 -->
+
+<script type="text/javascript" src="../js/jquery-1.4.4.min.js"></script>
+<script type="text/javascript" src="../js/alert.js"></script>
+</body>
+</html>

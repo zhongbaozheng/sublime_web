@@ -1,0 +1,83 @@
+body,html{
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	padding: 0;
+	background: #EFF3F6;
+}
+
+a{
+	text-decoration: none;
+}
+
+li{
+	list-style-type: none;
+}
+
+.header{
+	background: #3EB7EC;
+	width: 100%;
+	height: 8.0rem;
+	line-height: 8.0rem;
+	text-align: center;
+}
+
+/*display:inline 相当于内联，水平了*/
+.header p{
+	display: inline;
+	width: 100%;
+	color: white;
+	font-size: 3.0rem;
+	text-align: center;
+}
+
+
+.header a{
+	position: absolute;
+	color: white;
+	font-size: 2.5em;
+	/* right: 3.0rem;  如果这里先写了属性，那么后面写的就没效果了，需要就在html中重写style*/
+}
+
+
+.header img{
+	position: absolute;
+}
+
+/* .left_icon{
+	left: 2.0rem;
+	top: 2.0rem;
+	width: 3.5rem;
+	height: 3.5rem;
+}
+
+.rigth_icon{
+	left: 2.0rem;
+	top: 2.0rem;
+	width: 3.5rem;
+	height: 3.5rem;	
+} */
+
+.left_icon1{
+	left: 1.0rem;
+	top: 2.0rem;
+	width: 3.5rem;
+	height: 3.5rem;
+}
+
+.left_icon1 img{
+	width: 3.5rem;
+	height: 3.5rem;
+}
+
+.right_icon1{
+	right:4.0rem;
+	top: 2.0rem;
+	width: 3.5rem;
+	height: 3.5rem;
+}
+
+.right_icon1 img{
+	width: 3.5rem;
+	height: 3.5rem;
+}

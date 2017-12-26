@@ -1,0 +1,205 @@
+/*重量及商品分类*/
+.goods_info {
+	width: 46%;
+	display: inline-block;
+	background-color: white;
+	text-align: left;
+	padding-left: 2.0rem;
+	border: 2px solid #DFE0E3;
+}
+
+.goods_property {
+	font-size: 2.0rem;
+}
+
+.goods_value {
+	font-size: 2.0rem;
+	color: #B9B9B9;
+	right: 6.0rem;
+}
+
+.goods_value1 {
+	font-size: 2.0rem;
+	color: #B9B9B9;
+	right: 3.0rem;
+}
+
+.goods_value3 {
+	position: absolute;
+	display: inline-block;
+	top: -1.0rem;
+	line-height: 2.0rem;
+	font-size: 2.0rem;
+	right: 3.0rem;	
+}
+
+.goods_value3 p {
+	color: #B9B9B9;
+	text-align: right;
+}
+
+.goods_value4 {
+	width: 11%;
+}
+
+
+
+.align_right {
+	position: relative;
+	left:0.5%;
+}
+
+/*重量及商品分类*/
+
+/*寄件状态*/
+
+.express_order_info {
+	position: relative;
+	display: inline-block;
+	bottom: 1.5rem;
+	line-height: 1.5rem;
+	padding-left: 3.0rem;
+}
+
+.express_order {
+	font-size: 1.2em;
+	margin: 0.5rem 0;
+
+}
+
+.express_date,.recieve_date,.call_list_order{
+	color: #B9B9B9;
+	font-size: 0.8em;
+}
+
+.express_order_status {
+	display: inline-block;
+	line-height: 1.5rem;
+	width: 46%;
+	text-align: right; 
+}
+
+.recieve_status {
+	font-size: 1.1em;
+	color: #55ABF5;
+}
+
+.pay_status {
+	font-size: 1.1em;
+	color: #EB9D5C;
+	margin-bottom: 1.2rem;
+}
+
+.qrcode {
+	width: 105px;
+	height: 105px;
+}
+/*寄件状态*/
+
+/*订单列表*/
+
+.order_list_background,.call_list_background {
+	background: white;
+}
+
+.order_list_background ul,.call_list_background ul {
+	margin: 0;
+	padding: 0;
+}
+
+.order_list_item {
+	position: relative;
+}
+
+.order_list_info {
+	padding: 1.0rem 2.0rem 0 2.0rem;
+}
+
+.order_list_date {
+	display: inline-block;
+}
+
+.order_list_date p {
+	margin: 0.5rem 0;
+}
+
+.order_list_recieve_status {
+	font-size: 1.3em;
+	color: #EDB300;
+	position: absolute;
+	top:2.0rem;
+	right: 3.0rem;
+}
+
+.order_list_express_info {
+	padding: 0 2.0rem 1.0rem 2.0rem;
+	line-height: 3.5rem;
+}
+
+.order_list_express_user {
+	display: inline-block;
+}
+
+.order_list_express_user_name {
+	margin:0;
+}
+
+.order_list_express_user_location {
+	font-size: 1.5em;
+	margin: 0;
+}
+
+.order_list_user_type {
+	width: 50px;
+	height: 62px;
+}
+
+.order_list_indicator {
+	font-size: 1.7em;
+	margin: 0 1.0rem;
+	position: relative;
+	bottom:2.0rem;
+}
+
+.order_list_express_type {
+	font-size: 1.0em;
+	color: #B9B9B9;
+	position: absolute;
+	right: 3.0rem;
+	bottom:1.5rem;
+}
+/*订单列表*/
+
+/*呼叫列表*/
+.call_list_background p {
+	position: relative;
+	padding: 0 2.0rem;
+	/*margin: 1.0rem 0;*/
+}
+
+.call_list_address {
+	padding-left: 3.0rem;
+	margin: 1.5rem 0;
+	font-size: 1.0em;
+}
+
+.call_list_address img {
+	width: 30px;
+	height: 40px;
+	margin-right: 1.0rem;
+}
+
+.call_list_service_type {
+	font-size: 1.1em;
+	color: #55ABF5;
+	margin-top: 1.5rem;
+}
+
+.call_list_service_target {
+	position: absolute;
+	color: #F6C13C;
+	font-size: 1.3em;
+	top: 2.5rem;
+	right: 2.5rem;
+}
+/*呼叫列表*/

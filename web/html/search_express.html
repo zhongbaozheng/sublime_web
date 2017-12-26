@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>快递查询</title>
+	<meta name="viewport" content="user-scalable=0" />
+	<link rel="stylesheet" type="text/css" href="../css/main.css" />
+	<link rel="stylesheet" type="text/css" href="../css/input.css" />
+	<link rel="stylesheet" type="text/css" href="../css/button.css" />
+	<link rel="stylesheet" type="text/css" href="../css/alert.css" />
+</head>
+<body>
+	<!-- 顶部标题栏 -->
+	<header>
+		<div class="header">
+			<a class="left_ico" href="home.html"><img src="../images/back.png" /></a>
+			<p>快递查询</p>
+		</div>
+	</header>
+	<!-- 顶部标题栏 -->
+
+	<!-- 快递查询 -->
+	<div class="search_express_background">
+		<div class="search_express_item">
+			<img class="search_express_item_left_ico" src="../images/bar_code@2x.png" />
+			<input class="search_express_item_input" type="text" name="express_number" placeholder="请输入快递单号" />
+		</div>
+
+		<div class="search_express_item" style="margin-bottom: 4.0rem;" onclick="show_alert('#express_company');">
+			<img class="search_express_item_left_ico" src="../images/express2@2x.png">
+			<span class="search_express_item_option">请选择快递公司</span>
+		</div>
+
+		<button class="confirm" onclick="window.location.href='order_detail.html'">查询</button>
+	</div>
+	<!-- 快递查询 -->
+
+	<!-- 快递公司选择弹窗 -->
+	<div id="express_company" class="alert_bg">
+		<div class="action_sheet_express_content">
+			<label class="action_sheet_express_label exress_label_checked" onclick="selectExpress(event);">
+				<input class="action_sheet_express_radio" type="radio" name="express_company" />
+				西邮
+			</label>
+			<label class="action_sheet_express_label" onclick="selectExpress(event);">
+				<input class="action_sheet_express_radio" type="radio" name="express_company" />
+				顺丰
+			</label>
+			<label class="action_sheet_express_label" onclick="selectExpress(event);">
+				<input class="action_sheet_express_radio" type="radio" name="express_company" />
+				EMS
+			</label>
+			<label class="action_sheet_express_label" onclick="selectExpress(event);">
+				<input class="action_sheet_express_radio" type="radio" name="express_company" />
+				宅急送
+			</label>
+			<label class="action_sheet_express_label" onclick="selectExpress(event);">
+				<input class="action_sheet_express_radio" type="radio" name="express_company" />
+				百世快递
+			</label>
+			<label class="action_sheet_express_label" onclick="selectExpress(event);">
+				<input class="action_sheet_express_radio" type="radio" name="express_company" />
+				中通
+			</label>
+			<label class="action_sheet_express_label" onclick="selectExpress(event);">
+				<input class="action_sheet_express_radio" type="radio" name="express_company" />
+				韵达
+			</label>
+			<label class="action_sheet_express_label" onclick="selectExpress(event);">
+				<input class="action_sheet_express_radio" type="radio" name="express_company" />
+				申通
+			</label>
+			<label class="action_sheet_express_label" onclick="selectExpress(event);">
+				<input class="action_sheet_express_radio" type="radio" name="express_company" />
+				邦德
+			</label>
+		</div>
+	</div>
+	<!-- 快递公司选择弹窗 -->
+
+</body>
+<script type="text/javascript" src="../js/jquery-1.4.4.min.js"></script>
+<script type="text/javascript" src="../js/alert.js"></script>
+</html>

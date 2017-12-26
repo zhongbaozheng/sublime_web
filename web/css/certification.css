@@ -1,0 +1,39 @@
+.description {
+	color: #B9B9B9;
+	font-size: 2.0em;
+	padding: 1.0em;
+}
+
+.user_certification {
+	margin:2.0rem;
+	margin-bottom: 0;
+	padding:1.0rem;
+	background-color: white;
+	border-bottom: 3px dashed #999999;
+}
+
+.user_certification span {
+	padding-bottom: 1.0rem;
+}
+
+.user_info {
+	font-size: 2.3em;
+	margin: 1.0rem;	
+}
+
+.user_info input {
+	padding-left: 1.0rem;
+	font-size: 1.0em;
+	width: 76%;
+	height: 4.0rem;
+	background-color: #EFF3F6;
+	border:0;
+}
+
+.with_letter_spacing {
+	letter-spacing: 4.5rem;
+}
+
+
+
+

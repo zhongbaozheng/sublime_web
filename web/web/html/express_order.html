@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>快递订单</title>
+	<link rel="stylesheet" type="text/css" href="../css/main.css" />
+	<link rel="stylesheet" type="text/css" href="../css/option.css" />
+	<link rel="stylesheet" type="text/css" href="../css/input.css" />
+	<link rel="stylesheet" type="text/css" href="../css/tabbar.css" />
+	<link rel="stylesheet" type="text/css" href="../css/express.css" />
+</head>
+<body>
+	<!-- 顶部标题栏 -->
+	<header>
+		<div class="header">
+			<p>快递订单</p>
+		</div>
+	</header>
+	<!-- 顶部标题栏 -->
+
+	<!-- 搜索框 -->
+	<div class="searchBg">
+		<input class="search" type="text" name="search" placeholder="请输入订单号" />
+		<img class="searchBtn" src="../images/search1@2x.png" />
+	</div>
+	<!-- 搜索框 -->
+
+	<!-- 导航条 -->
+	<div class="navigationBg">
+		<ul>
+			<li class="navigation_item selected">全部</li>
+			<li class="navigation_item">未收揽</li>
+			<li class="navigation_item">已收揽</li>
+			<li class="navigation_item">已寄出</li>
+		</ul>
+	</div>
+	<!-- 导航条 -->
+
+	<!-- 订单列表 -->
+	<div class="order_list_background">
+		<ul>
+			<li class="option_large">
+				<a href="order_detail.html" style="padding: 0;line-height: 2.0rem;" >
+				<div class="order_list_info">
+					<div class="order_list_date">
+						<p class="express_date">下单时间：2017-09-05 12:25:12</p>
+						<p class="recieve_date">收货时间：2017-09-05 12:25:12</p>
+					</div>
+					<span class="order_list_recieve_status">未收揽</span>
+				</div>
+				<div class="order_list_express_info">
+					<img class="order_list_user_type" src="../images/send2@2x.png" />
+					<div class="order_list_express_user">
+						<p class="order_list_express_user_name">陈先生</p>
+						<p class="order_list_express_user_location">广州市</p>
+					</div>
+					<span class="order_list_indicator">>></span>
+					<img class="order_list_user_type" src="../images/recieve1@2x.png" />
+					<div class="order_list_express_user"></div>
+					<div class="order_list_express_user">
+						<p class="order_list_express_user_name">陈小姐</p>
+						<p class="order_list_express_user_location">广州市</p>
+					</div>
+					<span class="order_list_express_type">顺丰速运</span>
+				</div>
+				</a>
+			</li>
+		</ul>
+	</div>
+	<!-- 订单列表 -->
+
+	<!-- 底部tabbar -->
+	<div class="tabbar">
+		<ul>
+			<li class="home"><a href="home.html">首页</a></li>
+			<li class="order_selected">订单</li>
+			<li class="mine"><a href="mine.html">我的</a></li>
+		</ul>
+	</div>
+	<!-- 底部tabbar -->
+
+</body>
+</html>

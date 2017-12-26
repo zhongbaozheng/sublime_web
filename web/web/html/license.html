@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>营业执照</title>
+	<link rel="stylesheet" type="text/css" href="../css/main.css" />
+	<link rel="stylesheet" type="text/css" href="../css/alert.css" />
+	<link rel="stylesheet" type="text/css" href="../css/certification.css" />
+	<link rel="stylesheet" type="text/css" href="../css/button.css" />
+	<link rel="stylesheet" type="text/css" href="../css/input.css" />
+</head>
+<body>
+	<!-- 顶部标题栏 -->
+	<header>
+		<div class="header">
+			<a class="left_ico" href="site_application.html"><img src="../images/back.png" /></a>
+			<p>营业执照</p>
+		</div>
+	</header>
+	<!-- 顶部标题栏 -->
+
+	<!-- 上传营业执照 -->
+	<div class="description">
+		<p style="margin:0;">请上传相关营业执照,方便您通过申请</p>
+	</div>
+	<div class="user_certification_image no_border">
+		<p>营业执照</p>
+		<div class="user_certification_image_frame">
+			<div class="user_certification_image_container"><input name="imgfile" type="file" accept="image/jpg, image/jpeg, image/png"/><img src="../images/delete@2x.png"/></div>
+			<p>营业执照</p>
+		</div>
+	</div>
+	<!-- 上传营业执照 -->
+
+	<!-- 上传成功提示框 -->
+	<button class="confirm" onclick="hide_alert('.alert_bg')">提交</button>
+	<div class="alert_bg">
+		<div class="alert_content">
+			<p>提交成功</p>
+			<button class="alert_btn" onclick="hide_alert('.alert_bg')">确认</button>
+		</div>
+	</div>
+	<!-- 上传成功提示框 -->
+
+	<script type="text/javascript" src="../js/jquery-1.4.4.min.js"></script>
+	<script type="text/javascript">
+		function show_alert(ele) {
+			$(ele).show();
+		}
+
+		function hide_alert(ele) {
+			$(ele).hide();
+			//coding...
+		}
+	</script>
+
+</body>
+</html>

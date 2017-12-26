@@ -1,0 +1,110 @@
+/*确认按钮*/
+.confirm {
+	display: block;
+	background: #55ABF5;
+	width: 90%;
+	border: 0;
+	border-radius: 0.8rem;
+	height: 8.0rem;
+	color: white;
+	font-size: 3.0rem;
+	margin: 3.0rem auto;
+}
+
+/*确认按钮*/
+
+/*支付按钮*/
+.pay {
+	position: fixed;
+	bottom: 0;
+	right: 0;
+	left: 0;
+	height: 8.0rem;
+	background: white;
+	line-height: 8.0rem;
+	border-top: 2px solid #DFE0E3;
+	padding: 0;
+	margin: 0;
+}
+
+.pay a {
+	font-size: 2.5em;
+	color: white;
+	height: 100%;
+	background-color: #55ABF5; 
+	width: 74%;
+	display: inline-block;
+	text-align: center;
+}
+
+.pay span {
+	color: #F0BA76;
+	font-size: 2.5em;
+	display: inline-block;
+	width: 25%;
+	text-align: center;
+}
+/*支付按钮*/
+
+/*获取验证码*/
+
+.identifying_code_background {
+	padding-left: 1.5rem;
+	border-left: 2px solid #DFE0E3;
+	position: absolute;
+	width: 15%;
+	height: 4.5rem;
+	line-height: 4.5rem;
+	top: 1.5rem;
+	right: 7.0rem;
+	text-align: center;
+}
+
+.identifying_code {
+	width: 14.0rem;
+	font-size: 0.9em;
+	padding: 0.7rem 0.5rem;
+	border-radius: 0.8rem;
+	background: #FF8900;
+	border: 0;
+	color: white;
+}
+
+/*获取验证码*/
+
+/*订单成功*/
+.order_success_btn {
+	text-align: center;
+	margin-top: 6.0rem;
+}
+
+.order_success_btn button {
+	font-size: 2.0em;
+	background: white;
+	border-radius: 1.0rem;
+	width: 18.0rem;
+	height: 6.0rem;
+}
+
+.go_to_home {
+	color: #333333;
+	border: 2px solid #999999;
+	margin-left: 1.0rem;
+}
+
+.check_order {
+	border: 2px solid #F19149;
+	margin-right: 1.0rem;
+	color: #F19149;
+}
+
+/*订单成功*/
+
+/*靠近底部*/
+.near_bottom {
+	position: absolute;
+	bottom: 8.0rem;
+	left: 5%;
+}
+/*靠近底部*/
+

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>实名认证</title>
+	<link rel="stylesheet" type="text/css" href="../css/main.css" />
+	<link rel="stylesheet" type="text/css" href="../css/certification.css" />
+	<link rel="stylesheet" type="text/css" href="../css/button.css" />
+	<link rel="stylesheet" type="text/css" href="../css/input.css" />
+	<link rel="stylesheet" type="text/css" href="../css/alert.css" />
+</head>
+<body>
+	<header class="">
+		<div class="header">
+			<a class="left_ico" href="site_application.html"><img src="../images/back.png" /></a>
+			<p>实名认证</p>
+		</div>
+	</header>
+	<div class="description">
+		只有实名认证，才能申请站点<br />
+		请您按照如下要求提供身份证信息
+	</div>
+	
+	<div class="user_certification">
+		<div class="user_info with_letter_spacing">名<span style="letter-spacing: 0;">字：</span><input type="input" name="user_name" placeholder="和身份证一致" /><br /></div>
+		<div class="user_info"><span>身份证号：</span><input type="input" name="user_name" placeholder="和身份证一致" /><br /></div>
+	</div>
+
+	<div class="user_certification_image">
+		<p class="user_certification_title">上传证件认证</p>
+		<div class="user_certification_image_frame">
+			<div class="user_certification_image_container"><input name="imgfile" type="file" accept="image/jpg, image/jpeg, image/png"/><img src="../images/delete@2x.png"/></div>
+			<p>上半身照</p>
+		</div>
+		<div class="user_certification_image_frame">
+			<div class="user_certification_image_container"><input name="imgfile" type="file" accept="image/jpg, image/jpeg, image/png"/><img src="../images/delete@2x.png"/></div>
+			<p>身份证正面</p>
+		</div>
+		<div class="user_certification_image_frame">
+			<div class="user_certification_image_container"><input name="imgfile" type="file" accept="image/jpg, image/jpeg, image/png"/><img src="../images/delete@2x.png"/></div>
+			<p>身份证反面</p>
+		</div>
+	</div>
+	<div class="user_certification_image no_border">
+		<p class="user_certification_title">参考实例</p>
+		<div class="user_certification_image_frame">
+			<div class="user_certification_image_container"><input name="imgfile" type="file" accept="image/jpg, image/jpeg, image/png"/><img src="../images/delete@2x.png"/></div>
+			<p>上半身照</p>
+		</div>
+		<div class="user_certification_image_frame">
+			<div class="user_certification_image_container"><input name="imgfile" type="file" accept="image/jpg, image/jpeg, image/png"/><img src="../images/delete@2x.png"/></div>
+			<p>身份证正面</p>
+		</div>
+		<div class="user_certification_image_frame">
+			<div class="user_certification_image_container"><input name="imgfile" type="file" accept="image/jpg, image/jpeg, image/png"/><img src="../images/delete@2x.png"/></div>
+			<p>身份证正面</p>
+		</div>
+	</div>
+	<button class="confirm" onclick="show_success_alert();">提交</button>
+	<div class="alert_bg">
+		<div class="alert_content">
+			<p>提交成功</p>
+			<button class="alert_btn" onclick="hide_success_alert();">确认</button>
+		</div>
+	</div>
+</body>
+<script type="text/javascript" src="../js/jquery-1.4.4.min.js"></script>
+<script type="text/javascript">
+	function show_success_alert() {
+		$('.alert_bg').show();
+	}
+
+	function hide_success_alert() {
+		$('.alert_bg').hide();
+		//coding...
+	}
+</script>
+</html>

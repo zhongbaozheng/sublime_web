@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>手机号更改</title>
+	<meta name="viewport" content="maximum-scale=1.0,user-scalable=0" />
+	<link rel="stylesheet" type="text/css" href="../css/main.css" />
+	<link rel="stylesheet" type="text/css" href="../css/input.css" />
+	<link rel="stylesheet" type="text/css" href="../css/button.css" />
+	<link rel="stylesheet" type="text/css" href="../css/alert.css" />
+</head>
+<body>
+	<!-- 顶部标题栏 -->
+	<header>
+		<div class="header">
+			<a class="left_ico" href="personal_information.html"><img src="../images/back.png" /></a>
+			<p>手机号更改</p>
+		</div>
+	</header>
+	<!-- 顶部标题栏 -->
+
+	<!-- 手机号码及验证码 -->
+	<div class="inputC" style="margin-top: 5.0rem;margin-bottom: 7.0rem;">
+		<div class="input_item icon_mobile1"><input type="password" name="express_user_name" placeholder="请输入手机号码" /></div>
+		<div class="input_item"><input style="width: 70%;" type="password" name="express_user_name" placeholder="验证码" /><div class="identifying_code_background"><button class="identifying_code">获取验证码</button></div></div>
+	</div>
+	<!-- 手机号码及验证码 -->
+
+	<button class="confirm" onclick="show_alert('.alert_bg');">确认保存</button>
+
+	<div class="alert_bg">
+		<div class="alert_content">
+			<p>保存成功</p>
+			<button class="alert_btn" onclick="hide_alert('.alert_bg');history.back();">确认</button>
+		</div>
+	</div>
+	<script type="text/javascript" src="../js/jquery-1.4.4.min.js"></script>
+	<script type="text/javascript" src="../js/alert.js"></script>
+</body>
+</html>

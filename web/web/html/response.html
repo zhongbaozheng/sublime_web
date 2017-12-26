@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>意见反馈</title>
+	<link rel="stylesheet" type="text/css" href="../css/main.css" />
+	<link rel="stylesheet" type="text/css" href="../css/input.css" />
+	<link rel="stylesheet" type="text/css" href="../css/button.css" />
+	<link rel="stylesheet" type="text/css" href="../css/alert.css" />
+	<style type="text/css">
+		body {
+			background: #F5F5F5;
+		}
+	</style>
+</head>
+<body>
+	<!-- 顶部标题栏 -->
+	<header>
+		<div class="header" style="background-color:#EDEDED;border-bottom: 2px solid #DBDBDB;">
+			<a class="left_ico" href="mine.html"><img src="../images/back_black.png" /></a>
+			<p style="color: black;">意见反馈</p>
+		</div>
+	</header>
+	<!-- 顶部标题栏 -->
+	
+	<div class="responseBg"><textarea class="response" type="text" placeholder="请在此输入您对西邮的意见"></textarea></div>
+	
+	<button class="confirm near_bottom" onclick="show_alert('#response_display')">提交</button>
+
+	<!-- 反馈成功弹窗 -->
+	<div id="response_display" class="alert_bg">
+		<div class="alert_response_content">
+			<p class="alert_response_title">提交成功</p>
+			<p class="alert_response_dialog">您的反馈意见已成功提交，感谢您对西邮的关注与支持。</p>
+			<button class="confirm" onclick="hide_alert('#response_display')" style="width: 100%;margin-bottom: 1.0rem;">确定</button>
+		</div>
+	</div>
+	<!-- 反馈成功弹窗 -->
+
+	<script type="text/javascript" src="../js/jquery-1.4.4.min.js"></script>
+	<script type="text/javascript">
+		function show_alert(ele) {
+			$(ele).show();
+		}
+
+		function hide_alert(ele) {
+			$(ele).hide();
+			//coding...
+		}
+	</script>
+</body>
+</html>
+

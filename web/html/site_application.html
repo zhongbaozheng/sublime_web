@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>站点申请</title>
+	<meta name="viewport" content="user-scalable=0" />
+	<link rel="stylesheet" type="text/css" href="../css/main.css" />
+	<link rel="stylesheet" type="text/css" href="../css/option.css" />
+	<link rel="stylesheet" type="text/css" href="../css/select.css" />
+	<link rel="stylesheet" type="text/css" href="../css/input.css" />
+	<link rel="stylesheet" type="text/css" href="../css/button.css" />
+	<link rel="stylesheet" type="text/css" href="../css/alert.css" />
+</head>
+<body>
+	<header>
+		<div class="header">
+			<a class="left_ico" href="home.html"><img src="../images/back.png" /></a>
+			<p>站点申请</p>
+		</div>
+	</header>
+	<div style="background-color: white;">
+		<div class="option no-border ico_base_info"><a href="information.html">基本信息<img src="../images/right_arrow@2x.png"></a></div>
+		<div class="divider"></div>
+		<div class="option no-border ico_certification margin_bottom"><a href="license.html">营业执照<img src="../images/right_arrow@2x.png"></a></div>
+	</div>
+	<div class="option no-border ico_check"><a href="certification.html">实名认证<img src="../images/right_arrow@2x.png"></a></div>
+	<div class="address">
+		<select>
+			<option>广东</option>
+		</select>			
+		<span>省</span>
+		<select>
+			<option>广州</option>
+		</select>
+		<span>市</span>
+		<select>
+			<option>天河</option>
+		</select>
+		<span>区</span>
+	</div>
+	<div class="address_detail"><span>详细地址：</span><input type="input" name="address_detail" value="详细地址"/></div>
+	<div class="certification"><label class="label_certification" onclick="radio_check(event)"><input class="input_certification" type="checkbox" name="certification">我已阅读并同意</label><a href="protocol.html">《申请协议》</a></div>
+	<button class="confirm" onclick="show_alert('.alert_bg')">确认申请</button>
+	<div class="alert_bg">
+		<div class="alert_content">
+			<p>申请提交成功</p>
+			<button class="alert_btn" onclick="history.back();">确认</button>
+		</div>
+	</div>
+</body>
+<script type="text/javascript" src="../js/jquery-1.4.4.min.js"></script>
+<script type="text/javascript" src="../js/alert.js"></script>
+<script type="text/javascript" src="../js/radio.js"></script>
+</script>
+</html>

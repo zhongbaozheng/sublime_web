@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>基本信息</title>
+	<meta name="viewport" content="user-scalable=0" />
+	<link rel="stylesheet" type="text/css" href="../css/main.css" />
+	<link rel="stylesheet" type="text/css" href="../css/input.css" />
+	<link rel="stylesheet" type="text/css" href="../css/option.css" />
+	<link rel="stylesheet" type="text/css" href="../css/button.css" />
+	<link rel="stylesheet" type="text/css" href="../css/select.css" />
+	<link rel="stylesheet" type="text/css" href="../css/alert.css" />
+</head>
+<body>
+	<!-- 顶部标题栏 -->
+	<header>
+		<div class="header">
+			<a class="left_ico" href="site_application.html"><img src="../images/back.png" /></a>
+			<p>基本信息</p>
+		</div>
+	</header>
+	<!-- 顶部标题栏 -->
+
+	<!-- 主体内容 -->
+	<div class="inputBg">
+		<div><input class="inputA inputBase icon_user" type="input" name="username" value="王伟" /></div>
+		<div class="ico_sex option" onclick="show_alert('#sex')"><a>男<img src="../images/right_arrow@2x.png" /></a></div>
+		<div><input class="inputA inputBase icon_email" type="input" name="email" value="131556132@qq.com" /></div>
+		<div><input class="inputA inputBase icon_mobile" type="input" name="mobile" value="13155216611" /></div>
+		<div><input class="inputA inputBase icon_tel" type="input" name="tel" value="020-235689" /></div>
+		<div class="address">
+			<select id="province">
+				<option class="option">请选择</option>
+			</select>			
+			<span>省</span>
+			<select id="city">
+				<option class="option">请选择</option>
+			</select>
+			<span>市</span>
+			<select id="district">
+				<option class="option">请选择</option>
+			</select>
+			<span>区</span>
+		</div>
+		<div><input class="inputA inputBase icon_address" type="input" name="address" value="科韵路棠安小区3栋302" /></div>
+		<div><textarea class="inputB inputBase" type="input" name="description">工作沉稳，性格开朗，聪明!</textarea></div>
+	</div>
+	<button class="confirm" onclick="show_alert('#success')">确认保存</button>
+	<!-- 主体内容 -->
+
+	<!-- 保存成功弹窗 -->
+	<div id="success" class="alert_bg">
+		<div class="alert_content">
+			<p>保存成功</p>
+			<button class="alert_btn" onclick="history.back();">确认</button>
+		</div>
+	</div>
+	<!-- 保存成功弹窗 -->
+
+	<!-- 性别选择弹窗 -->
+	<div id="sex" class="action_sheet_bg" onclick="hide_alert('#sex');">
+		<dl class="action_sheet_content">
+			<dt>性别选择</dt>
+			<div class="stripe_border"><img src="../images/stripe_orange.png" /></div>
+			<dd class="action_sheet_selected" onclick="selectSex(event);">男</dd>
+			<dd onclick="selectSex(event);">女</dd>
+		</dl>
+	</div>
+	<!-- 性别选择弹窗 -->
+
+	<script type="text/javascript" src="../js/jquery-1.4.4.min.js"></script>
+	<script type="text/javascript" src="../js/alert.js"></script>
+</body>
+</html>

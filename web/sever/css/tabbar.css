@@ -1,0 +1,55 @@
+/*底部tabbar*/
+.tabbar {
+	width: 100%;
+	border-top: 0.3px solid #444444;
+	height: 8.0rem;
+	position: fixed;
+	bottom: 0;
+	background: white;  
+}
+
+.tabbar ul {
+	padding: 0;
+	margin:  0;
+}
+
+.tabbar li {
+	font-size: 2.0em;
+	text-align: center;
+	display: inline-block;
+	width: 33%;
+	height: 8.0rem;
+	line-height: 8.0rem;
+}
+
+.on {
+	color: #3EB7EC;
+}
+/*底部tabbar*/
+
+/*导航条*/
+.navigationBg {
+	text-align: center;
+	height: 5.5rem;
+	border-top: 1px solid #DFE0E3;
+	border-bottom: 1px solid #DFE0E3;
+}
+
+.navigationBg ul {
+	height: 100%;
+	line-height: 5.5rem;
+	margin: 0;
+}
+
+.navigation_item {
+	display: inline-block;
+	font-size: 1.9em;
+	margin: 0 4.5rem;
+	/*padding: 2.0rem 0;*/
+}
+
+.selected {
+	color: #3EB7EC;
+	border-bottom: 5px solid #3EB7EC;
+}
+/*导航条*/

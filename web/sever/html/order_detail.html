@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>订单详情</title>
+	<link rel="stylesheet" type="text/css" href="../css/main.css" />
+	<link rel="stylesheet" type="text/css" href="../css/option.css" />
+	<link rel="stylesheet" type="text/css" href="../css/express.css" />
+	<link rel="stylesheet" type="text/css" href="../css/alert.css" />
+	<style type="text/css">
+		body {
+			padding-bottom: 20.0rem;
+		}
+	</style>
+</head>
+<body>	
+	<!-- 顶部标题栏 -->
+	<header>
+		<div class="header">
+			<img class="left_ico" src="../images/back.png" />
+			<p>订单详情</p>
+		</div>
+	</header>
+	<!-- 顶部标题栏 -->
+	
+	<!-- 寄件人及收件人信息 -->
+	<div style="background-color: white;margin-top:1.0rem;margin-bottom: 2.0rem;">
+		<div class="option_large">
+			<a style="padding-left: 5%;">
+				<div class="option_content">
+					<p class="option_name">叶乐华<span class="option_tel">13226899999</span></p>
+					<p class="option_address">广东深圳市宝安区 大浪街道 谭罗新一村华龙液压元件有限公司对面487号。</p>
+					<img class="option_right_ico" src="../images/send1@2x.png" />
+				</div>
+			</a>
+		</div>
+		<div class="option_large">
+			<a style="padding-left: 5%;">
+				<div class="option_content">
+					<p class="option_name">叶乐华<span class="option_tel">13226899999</span></p>
+					<p class="option_address">广东深圳市宝安区 大浪街道 谭罗新一村华龙液压元件有限公司对面487号。</p>
+					<img class="option_right_ico" src="../images/recieve@2x.png" />
+				</div>
+			</a>
+		</div>
+		<div class="stripe_border"><img src="../images/stripe_blue.png"></div>
+	</div>
+	<!-- 寄件人及收件人信息 -->
+	
+	<!-- 寄件状态 -->
+	<div class="option_large" style="background-color: white;margin:2.0rem 0">
+		<div class="express_order_info">
+			<p class="express_order">20170808ABCDE12345</p>
+			<p class="express_type">顺丰速递</p>
+			<p class="express_date">下单时间：2017-09-05 12:25:12</p>
+			<p class="recieve_date">收货时间：2017-09-05 12:25:12</p>
+		</div>
+		<div class="express_order_status">
+			<p class="recieve_status">未揽件</p>
+			<p class="pay_status">已支付</p>
+			<img class="qrcode" src="../images/qrcode_show@2x.png" />	
+		</div>
+	</div>
+	<!-- 寄件状态 -->
+
+	<!-- 重量及物品类别 -->
+	<div style="margin-bottom: 2.0rem;">
+		<div class="goods_info">
+			<p class="goods_property margin_right">重量</p>
+			<p class="goods_value">2kg</p>
+		</div>
+		<div class="goods_info align_right">
+			<p class="goods_property">物品</p>
+			<p class="goods_value">数码产品</p>
+		</div>
+	</div>
+	<!-- 重量及物品类别 -->
+	
+	<!-- 寄件相关类型 -->
+	<div style="background-color: white;margin-bottom: 2.0rem;">
+		<div class="option border_bottom"><a style="padding-left: 5%" href="javasript:void(0);">寄件方式<span class="goods_value1">快递员上门收件</span></a></div>
+		<div class="option border_bottom"><a style="padding-left: 5%" href="javasript:void(0);">支付方式<span class="goods_value1">微信支付</span></a></div>
+		<div class="option border_bottom"><a style="padding-left: 5%" href="javasript:void(0);">支付金额<span class="goods_value1">20.00元</span></a></div>
+		<div class="option border_bottom"><a style="padding-left: 5%" href="javasript:void(0);">服务点<span class="goods_value1">棠安小区服务点</span></a></div>
+		<div class="option border_bottom"><a style="padding-left: 5%" href="javasript:void(0);">服务人员<div class="goods_value3"><p id="name">王汪</p><p id="mobile">13144469951</p></span></a></div>
+	</div>
+	<!-- 寄件相关类型 -->
+
+	<!-- 二维码弹窗 -->
+	<div id="qrcode_display" class="alert_bg">
+		<img class="alert_qrcode" src="../images/1504151834@2x.png" />
+	</div>
+	<!-- 二维码弹窗 -->
+
+
+</body>
+</html>

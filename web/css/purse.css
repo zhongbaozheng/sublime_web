@@ -1,0 +1,45 @@
+.purse_pic_background {
+	height: 20%;
+	background: #3EB7EC;
+	margin-top: -2px;
+	padding: 0 4.0rem;
+}
+
+.purse_pic_content{
+	display: inline-block;
+	height: 100%;
+	width: 90%;
+	vertical-align: top;
+}
+
+.purse_pic {
+	display: inline-block;
+	height: 100%;
+}
+
+.purse_pic_recharge {
+	margin-top: 2.0rem;
+	margin-bottom: 5.5rem;
+	display: block;
+	width: 120%;
+	height: 21%;
+}
+
+.purse_pic_pocket {
+	display: block;
+	width: 120%;
+	height: 20%;
+}
+
+.purse_pic_title {
+	font-size: 2.0em;
+	margin: 0;
+	color: white;
+	height: 55%;
+}
+
+.purse_pic_money {
+	font-size: 5.1em;
+	margin: 0;
+	color: white;
+}

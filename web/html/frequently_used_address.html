@@ -1,0 +1,55 @@
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>常用地址</title>
+	<meta name="viewport" content="user-scalable=0" />
+	<link rel="stylesheet" type="text/css" href="../css/main.css" />
+	<link rel="stylesheet" type="text/css" href="../css/input.css" />
+	<link rel="stylesheet" type="text/css" href="../css/select.css" />
+	<link rel="stylesheet" type="text/css" href="../css/button.css" />
+</head>
+<body>
+	
+	<!-- 顶部标题栏 -->
+	<header>
+		<div class="header">
+			<a class="left_ico" onclick="history.back();"><img src="../images/back.png" /></a>
+			<p>常用地址</p>
+		</div>
+	</header>
+	<!-- 顶部标题栏 -->
+
+	<!-- 常用地址信息 -->
+	<div class="inputC">
+		<p style="padding-left: 10%;" class="icon_user1"><input type="input" name="express_user_name" style="margin-left: 1.5rem;" placeholder="姓名" /></p>
+		<p style="padding-left: 10%;" class="icon_mobile1"><input type="input" name="express_user_mobile" style="margin-left: 1.5rem;" placeholder="手机号" /></p>
+		<div class="stripe_border"><img src="../images/stripe_blue.png"></div>
+	</div>
+	<!-- 常用地址信息 -->
+
+	<!-- 地址选择 -->
+	<div class="address">
+		<select>
+			<option class="option">广东</option>
+		</select>			
+		<span>省</span>
+		<select>
+			<option class="option">广州</option>
+		</select>
+		<span>市</span>
+		<select>
+			<option class="option">天河</option>
+		</select>
+		<span>区</span>
+	</div>
+	<!-- 地址选择 -->
+
+	<!-- 详细地址 -->
+	<div class="address_detail icon_address1" style="padding-left: 10%;font-size: 2.2em"><input type="input" name="address_detail" style="margin-left: 1.5rem;" placeholder="详细地址" /></div>
+	<!-- 详细地址 -->
+
+	<!-- 选择站点 -->
+	<div style="background-color: white;margin-top: 4.0rem;padding: 1.0rem;"><button class="confirm" style="margin-top: 0;margin-bottom: 0;height: 7.0rem;width: 95%;" onclick="window.location.href='choose_station.html';">选择站点</button></div>
+	<!-- 选择站点 -->
+</body>
+</html>

@@ -1,0 +1,50 @@
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>编辑地址</title>
+	<link rel="stylesheet" type="text/css" href="../css/main.css" />
+	<link rel="stylesheet" type="text/css" href="../css/input.css" />
+	<link rel="stylesheet" type="text/css" href="../css/select.css" />
+</head>
+<body>
+	
+	<!-- 顶部标题栏 -->
+	<header>
+		<div class="header">
+			<a class="left_ico" href="express.html"><img src="../images/back.png" /></a>
+			<p>编辑地址</p>
+			<a href="#">完成</a>
+		</div>
+	</header>
+	<!-- 顶部标题栏 -->
+
+	<!-- 发件人信息 -->
+	<div class="inputC">
+		<p>姓名：<input type="input" name="express_user_name" placeholder="发件人姓名" /></p>
+		<p>联系方式：<input type="input" name="express_user_mobile" placeholder="发件人电话" /></p>
+		<div class="stripe_border"><img src="../images/stripe_blue.png"></div>
+	</div>
+	<!-- 发件人信息 -->
+
+	<!-- 地址选择 -->
+	<div class="address">
+		<select>
+			<option class="option">广东</option>
+		</select>			
+		<span>省</span>
+		<select>
+			<option class="option">广州</option>
+		</select>
+		<span>市</span>
+		<select>
+			<option class="option">天河</option>
+		</select>
+		<span>区</span>
+	</div>
+	<!-- 地址选择 -->
+
+	<!-- 详细地址 -->
+	<div class="address_detail" style="color:black;font-size: 2.2em"><span>详细地址：</span><input type="input" name="address_detail" value="详细地址"/></div>
+	<!-- 详细地址 -->
+</body>
+</html>

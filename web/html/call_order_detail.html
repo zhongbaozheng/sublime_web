@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>订单信息</title>
+	<meta name="viewport" content="user-scalable=0" />
+	<meta name = "format-detection" content = "telephone=no">
+	<link rel="stylesheet" type="text/css" href="../css/main.css" />
+	<link rel="stylesheet" type="text/css" href="../css/option.css" />
+	<link rel="stylesheet" type="text/css" href="../css/express.css" />
+	<link rel="stylesheet" type="text/css" href="../css/alert.css" />
+	<style type="text/css">
+		body {
+			padding-bottom: 20.0rem;
+		}
+	</style>
+</head>
+<body>	
+	<!-- 顶部标题栏 -->
+	<header>
+		<div class="header">
+			<a class="left_ico" onclick="history.back();"><img src="../images/back.png" /></a>
+			<p>订单信息</p>
+		</div>
+	</header>
+	<!-- 顶部标题栏 -->
+	
+	<!-- 寄件人及收件人信息 -->
+	<div style="background-color: white;margin-top:1.0rem;margin-bottom: 2.0rem;">
+		<div class="option_large">
+			<div style="padding-left: 5%;" class="option_content">
+				<p class="option_name">叶乐华<span class="option_tel">13226899999</span></p>
+				<p class="option_address">广东深圳市宝安区 大浪街道 谭罗新一村华龙液压元件有限公司对面487号。</p>
+			</div>
+		</div>
+		<div class="stripe_border"><img src="../images/stripe_blue.png"></div>
+	</div>
+	<!-- 寄件人及收件人信息 -->
+	
+	<!-- 寄件状态 -->
+	<div class="option_large" style="height:15.0rem;background-color: white;margin:2.0rem 0">
+		<div class="express_order_info">
+			<p class="express_order">20170808ABCDE12345</p>
+			<p class="express_type">上门服务：一键厨余</p>
+			<p class="express_date">下单时间：2017-09-05 12:25:12</p>
+		</div>
+		<div class="express_order_status">
+			<p class="recieve_status">已上门</p>
+			<img class="qrcode"  onclick="show_alert('.alert_bg')" src="../images/qrcode_show@2x.png" />	
+		</div>
+	</div>
+	<!-- 寄件状态 -->
+	
+	<!-- 寄件相关类型 -->
+	<div style="background-color: white;margin-bottom: 2.0rem;">
+		<div class="option border_bottom"><a style="padding-left: 5%" href="station_details.html">服务点<span class="goods_value1">棠安小区服务点</span></a></div>
+		<div class="option border_bottom"><a style="padding-left: 5%" href="service_personal.html">服务人员<div class="goods_value3"><p id="name">王汪</p><p id="mobile">13144469951</p></div></a></div>
+	</div>
+	<!-- 寄件相关类型 -->
+
+	<!-- 二维码弹窗 -->
+	<div class="alert_bg" onclick="hide_alert('.alert_bg')">
+		<img class="alert_qrcode" src="../images/1504151834@2x.png" />
+	</div>
+	<!-- 二维码弹窗 -->
+
+	<script type="text/javascript" src="../js/jquery-1.4.4.min.js"></script>
+	<script type="text/javascript" src="../js/alert.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,267 @@
+/*选择项*/
+
+/*有边框选择项*/
+.option {
+	position: relative;
+	font-size: 2.5em;
+	margin-left: 5%;
+	border-radius: 0.8rem;
+	border: 2px solid #DFE0E3;
+	width: 90%;
+	margin-top: 2.0rem;
+	height: 7.5rem;
+	line-height: 7.5rem;
+}
+
+
+.option a {
+	display: block;
+	color: #D0D0D0;
+	height: 100%;
+	text-align: left;
+	padding-left: 12%;
+	text-decoration: none;
+}
+
+.option img {
+	position: absolute;
+	top: 3.0rem;
+	right: 5%;
+}
+
+.option span {
+	position: absolute;
+}
+/*有边框选择项*/
+
+/*选择项-大*/
+.option_large {
+	position: relative;
+	font-size: 2.0em;
+	border-top: 2px solid #DFE0E3;
+	height: 16.0rem;
+}
+
+.option_large a {
+	display: block;
+	color: black;
+	height: 100%;
+	text-align: left;
+	line-height: 16rem;
+	padding-left: 20%;
+	text-decoration: none;
+}
+
+/*选择项-大*/
+
+/*选择项-寄件人信息*/
+.option_content {
+	line-height: 4.0rem;
+	height: 8.0rem;
+	display: inline-block;
+}
+.option_name {
+	font-size: 1.4em;
+	margin-top: 2.0rem; 
+	margin-bottom: 1.0rem;
+}
+
+.option_tel {
+	font-weight: normal;
+	margin-left: 4.0rem;
+	font-size: 0.9em;
+}
+
+.option_address {
+	font-size: 0.98em;
+	margin-top: 0;
+	margin-right: 9.0rem;
+}
+
+.option_right_ico {
+	position: absolute;
+	width: 105px;
+	height: 105px;
+	right: 2.0rem;
+	top: 4.0rem;
+}
+
+.option_right_ico1 {
+	position: absolute;
+	right: 5%;
+	top: 8.0rem;
+}
+
+.option_right_ico2 {
+	position: absolute;
+}
+
+/*选择项-寄件人信息*/
+
+/*选择项-我的*/
+
+.option_mine {
+	position: relative;
+	background-color: white;
+	height: 16.0rem;
+	margin-top:3.0rem;
+	margin-bottom: 2.0rem;
+}
+
+.mine_href {
+	color: black;
+	display: block;
+	height: 100%;
+}
+
+.mine_info {
+	padding-left: 3.0rem;
+	width: 90%;
+	height: 100%; 
+	display: inline-block;
+}
+.mine_info img {
+	position: absolute;
+	top:1.5rem;
+	width: 21%;
+	height: 80%;
+	border-radius: 50%;
+	border: 4px solid #55ABF5;
+}
+
+.mine_info span {
+	position: absolute;
+	font-size: 2.5em;
+	top: 3.5rem;
+	left:19.0rem;
+}
+
+.edit_user_info {
+	font-size: 2.0em;
+	color: #EB9D5C;
+	position: absolute;
+	display: inline;
+	top: 8.5rem;
+	left: 19.5rem;
+}
+
+/*选择项-我的*/
+
+/*选择项-个人信息*/
+
+.option_personal_info {
+	background-color: white;
+	margin-bottom: 2.0rem;
+	border-top: 2px solid #DFE0E3;
+	margin-top: 1.0rem;
+}
+
+/*选择项-个人信息*/
+
+/*添加底部间隔*/
+.margin_bottom {
+	margin-bottom: 3.0rem;
+}
+
+.margin_bottom_small {
+	margin-bottom: 1.5rem;
+}
+/*添加底部间隔*/
+
+/*no-border：加入变为无边框选择项 */
+.no-border {
+	width: 100%;
+	border-radius: 0;
+	border: 0;
+	margin: 0;
+}
+
+.option.no-border a,.option.border_bottom a {
+	font-size: 0.8em;
+	color: black;
+}
+/*no-border：加入变为无边框选择项 */
+
+/*底部边框*/
+.border_bottom {
+	width: 100%;
+	border-radius: 0;
+	margin: 0;
+	border-bottom: 1px solid #DFE0E3; 
+}
+/*底部边框*/
+
+/*顶部+底部边框*/
+.border_top_bottom {
+	width: 100%;
+	border-radius: 0;
+	border-bottom: 1px solid #DFE0E3; 
+}
+/*顶部+底部边框*/
+
+/*选择项*/
+
+.ico_send {
+	background: url(../images/send@2x.png) 2.0rem center no-repeat;
+	background-color: white;
+}
+
+.ico_sex {
+	background: url(../images/sex@2x.png) 2.0rem center no-repeat;
+	background-color: white;
+}
+
+.ico_base_info {
+	background: url(../images/base_info.png) 2.0rem center no-repeat;
+	background-color: white;
+}
+
+.ico_certification {
+	background: url(../images/certification.png) 2.0rem center no-repeat;
+	background-color: white;
+}
+
+.ico_check {
+	background: url(../images/check.png) 2.0rem center no-repeat;
+	background-color: white;
+}
+
+.ico_purse {
+	background: url(../images/purse@2x.png) 2.0rem center no-repeat;
+	background-color: white;	
+}
+
+.ico_send3 {
+	background: url(../images/send3@2x.png) 2.0rem center no-repeat;
+	background-color: white;	
+}
+
+.ico_recieve2 {
+	background: url(../images/recieve2@2x.png) 2.0rem center no-repeat;
+	background-color: white;	
+}
+
+.ico_message {
+	background: url(../images/message@2x.png) 2.0rem center no-repeat;
+	background-color: white;	
+}
+
+.ico_about_us {
+	background: url(../images/about_us@2x.png) 2.0rem center no-repeat;
+	background-color: white;	
+}
+
+.ico_response {
+	background: url(../images/response@2x.png) 2.0rem center no-repeat;
+	background-color: white;	
+}
+
+.ico_contact_us {
+	background: url(../images/phone2@2x.png) 2.0rem center no-repeat;
+	background-color: white;	
+}
+
+.ico_call_order {
+	background: url(../images/arrange@2x.png) 2.0rem center no-repeat;
+	background-color: white;	
+}
