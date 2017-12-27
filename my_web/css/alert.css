@@ -1,0 +1,30 @@
+/*弹窗*/
+.alert_bg{
+    display: none;
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    z-index: 1000;
+    background: rgba(1,1,1,0.2);
+}
+
+.alert_content1{
+    position: absolute;
+    left: 20%;
+    top: 40%;
+    height: 20%;
+    background: white;
+    text-align: center;
+    z-index: 1001;
+
+}
+
+.alert_btn1{
+
+}
+
+.alert_btn2{
+
+}
