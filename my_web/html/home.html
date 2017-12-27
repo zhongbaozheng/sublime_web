@@ -9,10 +9,10 @@
 	<meta name="description" content="我的主页">
 	<meta name="keywords" content="">
 	<!--引入.css-->
-	<link rel="stylesheet" type="text/css" href="../css/main.css">
-	<link rel="stylesheet" type="text/css" href="../css/home.css">
-	<link rel="stylesheet" type="text/css" href="../css/tabbar.css">
-	<link rel="stylesheet" type="text/css" href="../css/alert.css">
+	<link rel="stylesheet" type="text/css" href="../css/main.css"/>
+	<link rel="stylesheet" type="text/css" href="../css/home.css"/>
+	<link rel="stylesheet" type="text/css" href="../css/tabbar.css"/>
+    <link rel="stylesheet" type="text/css" href="../css/alert.css"/>
 	<!-- <link rel="stylesheet" type="text/css" href="../css/tabbar.css">
 	<link rel="stylesheet" type="text/css" href="../css/alert.css"> -->
 	<script type="text/javascript" src="../js/TouchSlide.1.1.js"></script>
@@ -29,7 +29,7 @@
 	<!--顶部标题栏-->
 	<header>
 		<div class="header">
-			<a class="left_icon1" href=""><img src="../images/add_friend@2x.png"></a>
+			<a class="left_icon1" href="site_application.html"><img src="../images/add_friend@2x.png"></a>
 			<p><a href="" style="font-size: 1.0em;right: 45%">首页</a></p>
 			<a class="right_icon1" href=""><img src="../images/qrcode@2x.png"></a>
 		</div>
@@ -113,29 +113,26 @@
 
 
 	<!-- 弹框 -->
-	<div id="call" class="alert_bg">
+    <div id="call" class="alert_bg">
+        <div class="alert_content1">
+            <p>需扣费0.5元</p>
+            <div class="alert_btn_content">
+                <button class="alert_btn1" style="height: 36%;" onclick="hide_alert('#call');">取消</button>
+                <button class="alert_btn1" style="height: 36%;" onclick="hide_alert('#call');">呼叫</button>
+            </div>
+        </div>
+    </div>
+
+
+	<!-- id 也不能一样 -->
+	<div id="chuyu" class="alert_bg">
 		<div class="alert_content1">
-			<p>需扣0.5元</p>
-			<div class="alert_btn_content">
-				<button class="alert_btn1" style="height: 36%;" onclick="hide_alert('#call')">取消</button>
-				<button class="alert_btn2" style="height: 36%;" onclick="hide_alert('#call')">确定</button>
-			</div>
-		</div>
-		
-	</div>
-
-
-
-	<div id="call" class="alert_bg">
-		<div class="alert_content1">
-			<p>需要扣0.5元</p>
-			<div class="alert_btn_content">
-				<button class="alert_btn1" onclick="hide_alert('#call')">确认</button>
-				<button class="alert_btn2" onclick="hide_alert('#call')">取消</button>
+			<p>服务人员收到信息后会尽快上门，请稍候</p>
+			<div class="alert_btn_content2">
+				<button class="alert_btn" onclick="hide_alert('#call')">确认</button>
 			</div>
 		</div>
 	</div>
-
 
 
 
@@ -152,8 +149,9 @@
 	</div> -->
 	<!-- 测试专用 -->
 
+    <!-- 引入js-->
 	<script type="text/javascript" src="../js/jquery-1.4.4.min.js"></script>
-	<script type="text/javascript" src="../js/alert.css"></script>
+	<script type="text/javascript" src="../js/alert.js"></script>
 
 </body>
 </html>

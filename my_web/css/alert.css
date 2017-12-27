@@ -1,30 +1,51 @@
-/*弹窗*/
+/*弹窗,居中显示*/
 .alert_bg{
     display: none;
+
     position: fixed;
     left: 0;
     right: 0;
     bottom: 0;
     top: 0;
+    margin-left: auto;
+    margin-right: auto;
+
     z-index: 1000;
     background: rgba(1,1,1,0.2);
 }
 
+.alert_btn_content{
+    width: 100%;
+}
+
+.alert_bg p{
+    font-size: 2.5rem;
+    line-height: 1.0rem;
+    color: #3EB7EC;
+}
+
+
+
 .alert_content1{
     position: absolute;
-    left: 20%;
-    top: 40%;
-    height: 20%;
+    left: 14%;
+    top: 42%;
+    width: 72%;
     background: white;
     text-align: center;
     z-index: 1001;
-
+    border-radius: 0.6rem;
+    border: 2px solid #55ABF5;
 }
 
 .alert_btn1{
-
-}
-
-.alert_btn2{
-
+    display: inline-block;
+    font-size: 2.5rem;
+    color: white;
+    width: 49.6%;   /*父布局是100% 这里设置为49.6*/
+    height: 30%;
+    background: #55ABF5;
+    border: 0;
+    border-bottom-right-radius: 0.6rem;
+    border-bottom-left-radius: 0.6rem;
 }
