@@ -22,12 +22,16 @@
 	display: inline-block;  /*包裹加行宽*/
 }
 
+.tabbar a{
+	color: black;
+}
 
 .home{
 	background: url(../images/home@2x.png) center 1.0rem no-repeat;
 }
 
 .home_selected{	
+	color: #3EB7EC;
 	background: url(../images/home_selected@2x.png) center 1.0rem no-repeat;
 }
 
@@ -36,6 +40,7 @@
 }
 
 .order_selected{
+	color: #3EB7EC;
 	background: url(../images/order_selected@2x.png) center 1.0rem no-repeat;
 }
 
@@ -44,6 +49,7 @@
 }
 
 .mine_selected{
+	color: #3EB7EC;
 	background: url(../images/mine_selected@2x.png) center 1.0rem no-repeat;
 }
 

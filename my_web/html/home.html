@@ -12,6 +12,7 @@
 	<link rel="stylesheet" type="text/css" href="../css/main.css">
 	<link rel="stylesheet" type="text/css" href="../css/home.css">
 	<link rel="stylesheet" type="text/css" href="../css/tabbar.css">
+	<link rel="stylesheet" type="text/css" href="../css/alert.css">
 	<!-- <link rel="stylesheet" type="text/css" href="../css/tabbar.css">
 	<link rel="stylesheet" type="text/css" href="../css/alert.css"> -->
 	<script type="text/javascript" src="../js/TouchSlide.1.1.js"></script>
@@ -83,25 +84,21 @@
 			</div>
 		</a>
 
-		<a href="">
-			<div class="content left-bottom">
-				<img src="../images/clear@2x.png">
-				<p class="title">一键厨余</p>
-				<p class="detail detail-left-bottom">
-					为您匹配附近的服务站，提供上门服务
-				</p>
-			</div>
-		</a>
+		<div class="content left-bottom" onclick="show_alert('#call')">
+			<img src="../images/clear@2x.png">
+			<p class="title">一键厨余</p>
+			<p class="detail detail-left-bottom">
+				为您匹配附近的服务站，提供上门服务
+			</p>
+		</div>
 
-		<a href="">
-			<div class="content right-bottom">
-				<img src="../images/phone@2x.png">
-				<p class="title">我要寄件</p>
-				<p class="detail detail-right-bottom">
-					为您匹配附近的服务站，提供上门服务
-				</p>
-			</div>
-		</a>
+		<div class="content right-bottom" onclick="show_alert('#call')">
+			<img src="../images/phone@2x.png">
+			<p class="title">我要寄件</p>
+			<p class="detail detail-right-bottom">
+				为您匹配附近的服务站，提供上门服务
+			</p>
+		</div>
 
 	</div>
 
@@ -112,6 +109,19 @@
 			<li class="order"><a href="">订单</a></li>
 			<li class="mine"><a href="">我的</a></li>
 		</ul>
+	</div>
+
+
+	<!-- 弹框 -->
+	<div id="call" class="alert_bg">
+		<div class="alert_content1">
+			<p>需扣0.5元</p>
+			<div class="alert_btn_content">
+				<button class="alert_btn1" style="height: 36%;" onclick="hide_alert('#call')">取消</button>
+				<button class="alert_btn2" style="height: 36%;" onclick="hide_alert('#call')">确定</button>
+			</div>
+		</div>
+		
 	</div>
 
 
@@ -129,6 +139,9 @@
 		<a href="#">呵呵呵</a>
 	</div> -->
 	<!-- 测试专用 -->
+
+	<script type="text/javascript" src="../js/jquery-1.4.4.min.js"></script>
+	<script type="text/javascript" src="../js/alert.css"></script>
 
 </body>
 </html>
