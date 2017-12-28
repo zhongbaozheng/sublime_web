@@ -1,0 +1,77 @@
+.option{
+    width: 90%;
+    position: relative;
+    margin-left: 5%;
+    border-radius: 0.8rem;
+    border: 2px solid #DFE0E3;
+    margin-top: 2.0rem;
+    height: 7.5rem;
+    line-height: 7.5rem;
+}
+
+.option a{    /*前面已经有了option父布局*/
+    display: block;
+    color: #D0D0D0;
+    height: 100%;
+    text-align: left;
+    padding-left: 12%;
+    text-decoration: none;
+}
+.option img{
+    position: absolute;
+    top: 3.0rem;
+    right: 5%;
+}
+
+
+.no-border{
+    width: 100%;
+    border-radius: 0;
+    border: 0;
+    margin: 0;
+}
+
+.option.no-border a{   /*.option.no-border 和 .option .no-border区别很大的，空格*/
+    font-size: 2.5em;
+    color: black;
+}
+
+.ico_base_info{
+    /*2.0rem指的是其位置*/
+    background: url("../images/base_info.png") 2.0rem center no-repeat;
+    background-color: white;
+}
+
+.ico_name_confirm{
+    background: url("../images/check.png") 2.0rem center no-repeat;
+    background-color: white;
+}
+
+.ico_artifit_confirm{
+    background: url("../images/certification.png") 2.0rem center no-repeat;
+    background-color: white;
+}
+
+/*添加底部间隔*/
+.margin_bottom {
+    margin-bottom: 3.0rem;
+}
+
+
+/*选择项-大*/
+.option_large {
+    position: relative;
+    font-size: 2.0em;
+    border-top: 2px solid #DFE0E3;
+    height: 16.0rem;
+}
+
+.option_large a {
+    display: block;
+    color: black;
+    height: 100%;
+    text-align: left;
+    line-height: 1.0rem;
+    padding-left: 20%;
+    text-decoration: none;
+}

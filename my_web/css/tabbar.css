@@ -53,6 +53,37 @@
 	background: url(../images/mine_selected@2x.png) center 1.0rem no-repeat;
 }
 
+/*导航栏*/
+.navigation{
+    width: 100%;
+    text-align: center;
+    height: 5.5rem;
+    border-top: 1px solid #DFE0E3;
+    border-bottom: 1px solid #DFE0E3;
+}
+
+.navigation ul{
+    width: 100%;
+    line-height: 5.5rem;
+    margin: 0;
+}
+
+.navigation_item{
+    display: inline-block;
+    font-size: 1.9rem;
+    color: black;
+    margin: 0 4.5rem;   /*上下边距为0，左右边距为4.5rem*/
+}
+
+.navigation_item.item_select{
+    color: #3EB7EC;
+}
+
+.selected {
+    color: #3EB7EC;
+    border-bottom: 5px solid #3EB7EC;
+}
+
 
 
 

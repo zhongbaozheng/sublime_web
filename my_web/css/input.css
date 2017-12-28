@@ -1,0 +1,81 @@
+.address_detail{
+    height: 8.0rem;
+    border-top: 3px solid #DFE0E3;   /*上边框*/
+    border-bottom: 3px solid #DFE0E3;   /*上边框*/
+    background-color: white;
+    font-size: 2.5em;
+    color: #55ABF5;
+    line-height: 8.0rem;
+    padding-left: 2.0rem;
+}
+
+
+.address_detail input{
+    font-size: 0.85em;
+    width: 75%;
+    height: 74%;
+    border: 0;
+    margin-top: 1.0rem;
+}
+
+.address_detail span{
+    position: relative; /*这里用到了relative*/
+    top: 0.2rem;
+}
+
+
+.certification{
+    font-size: 2.0em;
+    margin-top: 2.0rem;
+    margin-bottom: 2.0rem;
+    padding-left: 2.0rem;
+}
+
+.certification a{
+    color: #55ABF5;
+}
+
+.certification input[type="checkbox"]{
+    height: 2.0rem;
+    width: 2.0rem;
+}
+
+.searchBg{
+    position: relative;
+    background: white;
+    text-align: center;
+    height: 6.0rem;
+    line-height: 6.5rem;
+    padding: 0.5rem 0;
+}
+
+.search{
+    color: #55ABF5;
+    padding-left: 2.0rem;
+    font-size: 1.8rem;
+    border-radius: 4.0rem;
+    border:2px solid #55ABF5;
+    height: 75%;
+    width: 85%;
+}
+
+.searchBtn{
+    position: absolute;
+    top: 2.0rem;
+    right: 5.0rem;
+}
+
+.search::-webkit-input-placeholder { /* WebKit browsers */
+    color: #55ABF5;
+}
+.search::-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+    color: #55ABF5;
+}
+.search:-moz-placeholder { /* Mozilla Firefox 19+ */
+    color: #55ABF5;
+}
+.search:-ms-input-placeholder { /* Internet Explorer 10+ */
+    color: #55ABF5;
+}
+
+

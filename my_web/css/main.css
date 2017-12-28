@@ -22,7 +22,6 @@ li{
 	text-align: center;
 }
 
-/*display:inline 相当于内联，水平了*/
 .header p{
 	display: inline;
 	width: 100%;
@@ -89,4 +88,17 @@ li{
     top: 2.0rem;
     width: 3.5rem;
     height: 3.5rem;
+}
+
+.left_ico img{
+    margin-top: 0.8rem;
+    width: 1.5rem;
+    height: 2.5rem;
+}
+
+.divider{
+    width: 90%;
+    height: 2px;
+    background-color: #D0D0D0;
+    margin: auto;
 }

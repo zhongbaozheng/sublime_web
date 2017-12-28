@@ -1,7 +1,6 @@
 /*弹窗,居中显示*/
 .alert_bg{
     display: none;
-
     position: fixed;
     left: 0;
     right: 0;
@@ -48,4 +47,31 @@
     border: 0;
     border-bottom-right-radius: 0.6rem;
     border-bottom-left-radius: 0.6rem;
+}
+
+.alert_btn{
+    display: block;
+    font-size: 2.5rem;
+    color: white;
+    width: 98%;
+    background: #55ABF5;
+    border: 0;
+    border-bottom-right-radius: 0.6rem;
+    border-bottom-left-radius: 0.6rem;
+    border-top-right-radius: 0.6rem;
+    border-top-left-radius: 0.6rem;
+}
+
+/*单个按钮*/
+.alert_content{
+    position: absolute;
+    align-content: center;
+    left: 14%;
+    top: 42%;
+    width: 72%;
+    background: white;
+    text-align: center;
+    z-index: 1001;
+    border-radius: 0.6rem;
+    border: 2px solid #55ABF5;
 }

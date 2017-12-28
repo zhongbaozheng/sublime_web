@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>快递订单</title>
+
+    <!-- 引入css-->
+    <link rel="stylesheet" type="text/css" href="../css/main.css">
+    <link rel="stylesheet" type="text/css" href="../css/search.css">
+    <link rel="stylesheet" type="text/css" href="../css/input.css">
+    <link rel="stylesheet" type="text/css" href="../css/tabbar.css">
+    <link rel="stylesheet" type="text/css" href="../css/option.css">
+    <link rel="stylesheet" type="text/css" href="../css/express.css">
+
+</head>
+<body>
+
+    <header>
+        <div class="header">
+            <p>快递订单</p>
+        </div>
+    </header>
+
+    <div class="searchBg">
+        <input class="search" type="search" name="search" placeholder="请输入订单号">
+        <img class="searchBtn" src="../images/search1@2x.png">
+    </div>
+
+    <div class="navigation">
+        <ul>
+            <li class="navigation_item selected" onclick="selectItem(event,'selected')">全部</li>
+            <li class="navigation_item" onclick="selectItem(event,'selected')">未收揽</li>
+            <li class="navigation_item" onclick="selectItem(event,'selected')">已收揽</li>
+            <li class="navigation_item" onclick="selectItem(event,'selected')">已寄出</li>
+        </ul>
+    </div>
+
+    <div class="order_list_background">
+        <ul>
+           <li class="option_large">
+               <a href="" style=":0;line-height: 2.0rem;">
+               <div class="order_list_info">
+                   <div class="order_list_date">
+                       <p class="express_date">下单时间：2017-09-05 12:25:12</p>
+                       <p class="recieve_date">收货时间：2017-09-05 12:25:12</p>
+                   </div>
+                   <span class="order_list_recieve_status">未收揽</span>
+               </div>
+
+               <div class="order_list_express_info">
+                   <img class="order_list_user_type" src="../images/send2@2x.png">
+                   <div class="order_list_express_user">
+                       <p class="order_list_express_user_name">陈先生</p>
+                       <p class="order_list_express_user_location">广州市</p>
+                   </div>
+
+                   <span class="order_list_indicator">>></span>
+                   <img class="order_list_user_type" src="../images/recieve1@2x.png">
+
+                       <div class="order_list_express_user">
+                           <p class="order_list_express_user_name">陈先生</p>
+                           <p class="order_list_express_user_location">广州市</p>
+                       </div>
+
+                        <span class="order_list_express_type">顺丰速运</span>
+               </div>
+
+               </a>
+
+           </li>
+        </ul>
+    </div>
+
+    <!-- 底部tabbar -->
+    <div class="tabbar">
+        <ul>
+            <li class="home"><a href="home.html">首页</a></li>
+            <li class="order_selected">订单</li>
+            <li class="mine"><a href="#">我的</a></li>
+        </ul>
+    </div>
+
+    <script type="text/javascript" src="../js/jquery-1.4.4.min.js"></script>
+    <script type="text/javascript" src="../js/actionBar.js"></script>
+
+</body>
+</html>

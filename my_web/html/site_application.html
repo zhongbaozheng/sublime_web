@@ -4,16 +4,86 @@
     <meta charset="UTF-8">
     <title>站点申请</title>
     <!-- head 引入 css-->
-    <link rel="stylesheet" type="text/css" href="../css/site_application.css">
     <link rel="stylesheet" type="text/css" href="../css/main.css">
+    <link rel="stylesheet" type="text/css" href="../css/option.css">
+    <link rel="stylesheet" type="text/css" href="../css/select.css">
+    <link rel="stylesheet" type="text/css" href="../css/alert.css">
+    <link rel="stylesheet" type="text/css" href="../css/input.css">
+    <link rel="stylesheet" type="text/css" href="../css/button.css"/>
+
 </head>
 
 <body>
+
     <header>
         <div class="header">
             <a href="home.html" class="left_ico"><img src="../images/back.png"></a>
-            <p>站点查看</p>
+            <p>站点申请</p>
         </div>
     </header>
+
+
+    <div class="option no-border ico_base_info">
+        <a href="#">
+            基本信息
+            <img src="../images/right_arrow@2x.png">
+        </a>
+    </div>
+    <div class="divider"></div>
+
+    <div class="option no-border ico_artifit_confirm">
+        <a href="#">
+            营业执照
+            <img src="../images/right_arrow@2x.png">
+        </a>
+    </div>
+    <div class="divider"></div>
+
+    <div class="option no-border ico_name_confirm">
+        <a href="#">
+            实名验证
+            <img src="../images/right_arrow@2x.png">
+        </a>
+    </div>
+    <div class="divider"></div>
+
+    <div class="address">
+        <select>
+            <option>广东</option>
+        </select>
+        <span>省</span>
+        <select>
+            <option>广州</option>
+        </select>
+        <span>市</span>
+        <select>
+            <option>天河</option>
+        </select>
+        <span>区</span>
+    </div>
+
+    <div class="address_detail">
+        <span>详细地址：</span><input type="input" name="address_detail" value="详细地址"></div>
+    <div class="certification">
+        <label class="label_certification" onclick="radio_check(event)">
+            <input class="input_certification" type="checkbox" name="cetification">
+            我已经阅读并同意
+        </label>
+        <a href="#">《申请协议》</a>
+    </div>
+
+    <button class="confirm" onclick="show_alert('.alert_bg')">确认申请</button>
+
+    <div class="alert_bg">
+        <div class="alert_content">
+            <p>申请成功</p>
+            <button class="alert_btn" onclick="history.back()">确认</button>
+        </div>
+    </div>
+
+    <script type="text/javascript" src="../js/jquery-1.4.4.min.js"></script>
+    <script type="text/javascript" src="../js/alert.js"></script>
+    <script type="text/javascript" src="../js/radio.js"></script>
+
 </body>
 </html>
